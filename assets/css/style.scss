@@ -110,8 +110,8 @@ h2 {
 		}
 
 		nav {
-			top: 50px;
-			right: 110px;
+			top: 72px;
+			right: 200px;
 			transform: translateX(20px);
 			opacity: 0;
 			transition: all 0.3s ease-in-out;
@@ -146,6 +146,7 @@ h2 {
 	margin: auto;
 	height: calc(100vh - 100px);
 	position: relative;
+	z-index: -1;
 	// top: calc(100vw * 0.06);
 
 	section {
