@@ -142,11 +142,11 @@ h2 {
 
 .wrapper {
 	width: 100vw;
-	padding: calc(100vw * 0.06);
+	// padding: calc(100vw * 0.06);
 	margin: auto;
 	height: calc(100vh - 100px);
 	position: relative;
-	top: calc(100vw * 0.06);
+	// top: calc(100vw * 0.06);
 
 	section {
 		height: 100vh;
