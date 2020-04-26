@@ -201,6 +201,15 @@ h2 {
   margin: auto;
 }
 
+.wrapper section .overlay {
+  background: black;
+  width: calc(100vw * 0.94);
+  margin: auto;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+
 .wrapper section .row {
   width: 75%;
 }
@@ -219,9 +228,17 @@ h2 {
   background-attachment: fixed;
 }
 
+.wrapper section.section2 .row {
+  margin-top: -150px;
+}
+
 .wrapper section.section3 {
   background: blue;
   margin-bottom: calc(100vw * 0.03);
+}
+
+.wrapper section.section3 .row {
+  margin-top: -450px;
 }
 
 footer {

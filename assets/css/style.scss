@@ -170,6 +170,14 @@ h2 {
 		align-items: center;
 		margin: auto;
 
+		.overlay {
+			background: black;
+			width: calc(100vw * 0.94);
+			margin: auto;
+			height: 100%;
+			position: absolute;
+			opacity: 0.1;
+		}
 		.row {
 			width: 75%;
 		}
@@ -185,11 +193,19 @@ h2 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+
+			.row {
+				margin-top: -150px;
+			}
 		}
 
 		&.section3 {
 			background: blue;
 			margin-bottom: calc(100vw * 0.03);
+
+			.row {
+				margin-top: -450px;
+			}
 		}
 	}
 }
