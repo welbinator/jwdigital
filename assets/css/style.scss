@@ -55,35 +55,35 @@ h2 {
 		width: 100%;
 		height: 100vh;
 		// border: 50px solid #30475e;
-		border: calc(100vw * 0.03) solid #222831;
+		border: 3vw solid #222831;
 		left: 0;
 		top: 0;
 	}
 	.left {
-		left: calc(100vw * 0.03);
+		left: 3vw;
 		height: calc(100vh - 30px);
-		top: calc(100vw * 0.03);
+		top: 3vw;
 		z-index: 1;
 
 		.logo {
-			top: calc(100vw * 0.03);
-			left: calc(100vw * 0.03);
+			top: 3vw;
+			left: 3vw;
 
 			img {
-				width: 80px;
+				width: 100px;
 				height: auto;
 			}
 		}
 	}
 	.right {
-		right: calc(100vw * 0.03);
+		right: 3vw;
 		height: calc(100vh - 30px);
-		top: calc(100vw * 0.03);
+		top: 3vw;
 		pointer-events: all;
 
 		.controls {
-			top: calc(100vw * 0.03);
-			right: calc(100vw * 0.03);
+			top: 3vw;
+			right: 3vw;
 
 			.controls-item {
 				border: 2px solid #d9d9d9;
@@ -151,13 +151,15 @@ h2 {
 .wrapper {
 	// width: calc(100vw - (100vw * 0.24));
 	width: 100%;
-	width: calc(100vw * 0.94);
+	// width: calc(100vw * 0.94);
+	width: 94vw;
 	// padding: calc(100vw * 0.06);
 	margin: auto;
 	height: calc(100vh - 100px);
 	position: relative;
-	top: calc(100vw * 0.03);
-	height: calc(100vh - (100vw * 0.06));
+	top: 3vw;
+	// height: calc(100vh - (100vw * 0.06));
+	height: calc(100vh - 6vw);
 
 	// top: calc(100vw * 0.06);
 
@@ -180,6 +182,7 @@ h2 {
 		}
 		.row {
 			width: 75%;
+			z-index: 1;
 		}
 
 		&.section1 {
