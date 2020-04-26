@@ -18,7 +18,7 @@
 				</div>
 				<div class="right abs">
 					<div class="controls abs">
-						<div class="controls-item"  onclick="showNav()">
+						<div class="controls-item" onclick="showNav()">
 							<div class="menu-icon">
 								<div class="line-container line-container-1">
 									<span class="line line-1"></span>
@@ -57,28 +57,45 @@
 				<section class="section1">
 					<div class="row">
 						<div class="column">
-							<p>Welcome</p>
+							<p class="rellax">Welcome</p cl>
 
-							<hr style="width: 100px; margin: 20px 0 50px 0;" />
+							<hr class="rellax" style="width: 100px; margin: 20px 0 50px 0;" />
 
-							<h2>Here is some welcome text. You're welcome</h2>
+							<h2 class="rellax">Here is some welcome text. You're welcome</h2>
 						</div>
 					</div>
 				</section>
 				<section class="section2">
 					<div class="row">
 						<div class="column">
-							<p>Section 2 yo</p>
+							<p class="rellax" data-rellax-speed="-1">Section 2 yo</p>
 
-							<hr style="width: 100px; margin: 20px 0 50px 0;" />
+							<hr class="rellax" data-rellax-speed="-1" style="width: 100px; margin: 20px 0 50px 0;" />
 
-							<h2>Here is some welcome text. You're welcome</h2>
+							<h2 class="rellax" data-rellax-speed="-1">Here is some welcome text. You're welcome</h2 class="rellax">
 						</div>
 					</div>
 				</section>
+				<section class="section3">
+					<div class="row">
+						<div class="column">
+							<p class="rellax" data-rellax-speed="0">Section 2 yo</p class="rellax" data-rellax-speed="-1">
+
+							<hr class="rellax" data-rellax-speed="0" style="width: 100px; margin: 20px 0 50px 0;" />
+
+							<h2 class="rellax" data-rellax-speed="0">Here is some welcome text. You're welcome</h2 class="rellax" data-rellax-speed="-1">
+						</div>
+					</div>
+				</section>
+				<!-- <footer>
+					<p>Footer Yo</p>
+				</footer> -->
 			</div>
 		</div>
-
+		<script src="/assets/js/rellax.js"></script>
 		<script src="assets/js/script.js"></script>
+		<script>
+			var rellax = new Rellax(".rellax");
+		</script>
 	</body>
 </html>
