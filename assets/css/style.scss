@@ -61,7 +61,7 @@ h2 {
 	}
 	.left {
 		left: 3vw;
-		height: calc(100vh - 30px);
+		height: calc(100vh - 6vw);
 		top: 3vw;
 		z-index: 1;
 
@@ -161,7 +161,29 @@ h2 {
 	// height: calc(100vh - (100vw * 0.06));
 	height: calc(100vh - 6vw);
 
-	// top: calc(100vw * 0.06);
+	#cta {
+		position: fixed;
+		top: 61vh;
+		left: 14.9vw;
+		// color: white;
+		z-index: 2;
+		padding: 20px;
+		background: none;
+		border: 2px solid white;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	button.section1_btn {
+		color: red;
+	}
+
+	.section2_btn {
+		color: blue;
+	}
+
+	.section3_btn {
+		color: green;
+	}
 
 	section {
 		height: 100vh;
@@ -171,6 +193,7 @@ h2 {
 		justify-content: center;
 		align-items: center;
 		margin: auto;
+		position: relative;
 
 		.overlay {
 			background: black;
@@ -178,7 +201,7 @@ h2 {
 			margin: auto;
 			height: 100%;
 			position: absolute;
-			opacity: 0.1;
+			opacity: 0.3;
 		}
 		.row {
 			width: 75%;
@@ -190,6 +213,7 @@ h2 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+			z-index: 1;
 		}
 		&.section2 {
 			background-image: url("../images/stand-out.jpg");
@@ -197,18 +221,21 @@ h2 {
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 
-			.row {
-				margin-top: -150px;
-			}
+			// .row {
+			// 	margin-top: -150px;
+			// }
 		}
 
 		&.section3 {
-			background: blue;
+			background-image: url("../images/client.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 			margin-bottom: calc(100vw * 0.03);
 
-			.row {
-				margin-top: -450px;
-			}
+			// .row {
+			// 	margin-top: -450px;
+			// }
 		}
 	}
 }

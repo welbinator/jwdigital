@@ -65,7 +65,7 @@ h2 {
 
 .frame .left {
   left: 3vw;
-  height: calc(100vh - 30px);
+  height: calc(100vh - 6vw);
   top: 3vw;
   z-index: 1;
 }
@@ -185,6 +185,30 @@ h2 {
   height: calc(100vh - 6vw);
 }
 
+.wrapper #cta {
+  position: fixed;
+  top: 61vh;
+  left: 14.9vw;
+  z-index: 2;
+  padding: 20px;
+  background: none;
+  border: 2px solid white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.wrapper button.section1_btn {
+  color: red;
+}
+
+.wrapper .section2_btn {
+  color: blue;
+}
+
+.wrapper .section3_btn {
+  color: green;
+}
+
 .wrapper section {
   height: 100vh;
   height: 100%;
@@ -199,6 +223,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  position: relative;
 }
 
 .wrapper section .overlay {
@@ -207,7 +232,7 @@ h2 {
   margin: auto;
   height: 100%;
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .wrapper section .row {
@@ -220,6 +245,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  z-index: 1;
 }
 
 .wrapper section.section2 {
@@ -229,17 +255,12 @@ h2 {
   background-attachment: fixed;
 }
 
-.wrapper section.section2 .row {
-  margin-top: -150px;
-}
-
 .wrapper section.section3 {
-  background: blue;
+  background-image: url("../images/client.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-bottom: calc(100vw * 0.03);
-}
-
-.wrapper section.section3 .row {
-  margin-top: -450px;
 }
 
 footer {
