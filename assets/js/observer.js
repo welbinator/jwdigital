@@ -10,17 +10,13 @@ function ctaCheck(entries) {
 	entries.forEach((entry) => {
 		const newClass = entry.target.className;
 
-		// const activeAnchor = document.querySelector(`[data-page=${className}]`);
-
 		if (entry.isIntersecting) {
 			console.log(newClass);
-			// const ctaBtn = document.querySelector("#cta");
-			// const frame = document.querySelector("#border");
-			// ctaBtn.className = newClass + "_" + "btn";
-			// frame.className = newClass + "_" + "border";
-			const section1 = "#ea6227";
-			const section2 = "#342ead";
-			const section3 = "#f2a51a";
+
+			const section1 = "#f78259";
+			const section2 = "#aeefec";
+			const section3 = "#eb4559";
+
 			let root = document.documentElement;
 
 			if (newClass == "section1") {
