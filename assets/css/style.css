@@ -191,12 +191,9 @@ h2 {
   height: calc(100vh - 6vw);
 }
 
-.wrapper #cta {
-  position: fixed;
-  top: 61vh;
-  left: 14.9vw;
-  z-index: 2;
+.wrapper .cta {
   padding: 20px;
+  margin-top: 50px;
   background: none;
   border: 2px solid white;
   font-size: 28px;
