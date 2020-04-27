@@ -14,8 +14,22 @@ function ctaCheck(entries) {
 
 		if (entry.isIntersecting) {
 			console.log(newClass);
-			const ctaBtn = document.querySelector("#cta");
-			ctaBtn.className = newClass + "_" + "btn";
+			// const ctaBtn = document.querySelector("#cta");
+			// const frame = document.querySelector("#border");
+			// ctaBtn.className = newClass + "_" + "btn";
+			// frame.className = newClass + "_" + "border";
+			const section1 = "#ea6227";
+			const section2 = "#342ead";
+			const section3 = "#f2a51a";
+			let root = document.documentElement;
+
+			if (newClass == "section1") {
+				root.style.setProperty("--sectionColor", section1);
+			} else if (newClass == "section2") {
+				root.style.setProperty("--sectionColor", section2);
+			} else {
+				root.style.setProperty("--sectionColor", section3);
+			}
 		}
 	});
 }

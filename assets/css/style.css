@@ -37,7 +37,14 @@ h2 {
   font-size: clamp(calc(100vw / 45.5), 3.5em, 3.5em);
 }
 
-/** global **/
+/** variables **/
+:root {
+  --section1color: #ea6227;
+  --section2color: #342ead;
+  --section3color: #f2a51a;
+  --sectionColor: #ea6227;
+}
+
 .abs {
   position: absolute;
 }
@@ -55,10 +62,10 @@ h2 {
   pointer-events: none;
 }
 
-.frame .border {
+.frame #border {
   width: 100%;
   height: 100vh;
-  border: 3vw solid #222831;
+  border: 3vw solid var(--sectionColor);
   left: 0;
   top: 0;
 }
@@ -176,7 +183,6 @@ h2 {
 }
 
 .wrapper {
-  width: 100%;
   width: 94vw;
   margin: auto;
   height: calc(100vh - 100px);
@@ -195,18 +201,7 @@ h2 {
   border: 2px solid white;
   font-size: 28px;
   font-weight: bold;
-}
-
-.wrapper button.section1_btn {
-  color: red;
-}
-
-.wrapper .section2_btn {
-  color: blue;
-}
-
-.wrapper .section3_btn {
-  color: green;
+  color: var(--sectionColor);
 }
 
 .wrapper section {
