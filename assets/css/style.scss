@@ -5,10 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html,
-body {
-	// overflow-x: hidden;
-}
+
 body {
 	font-family: "Manrope", sans-serif;
 	font-size: 62.5%;
@@ -47,13 +44,52 @@ h2 {
 .fix {
 	position: fixed;
 }
+.app {
+	position: absolute;
+	width: 100%;
+}
 
+nav {
+	// transform: translateX(20px);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	height: 100%;
+	background: #000000;
+	height: calc(100vh - 6vw);
+	width: 94vw;
+	max-width: 700px;
+	right: 3vw;
+	top: 3vw;
+	z-index: 1;
+
+	&.show-nav {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		padding-right: 15px;
+		height: 100%;
+
+		li {
+			margin: 5px;
+
+			a {
+				padding: 0 25px;
+			}
+		}
+	}
+}
 .frame {
 	width: 100%;
 	height: 100vh;
 	left: 0;
 	top: 0;
-	z-index: 2;
+	z-index: 1;
 	pointer-events: none;
 
 	// .section1_border {
@@ -83,7 +119,6 @@ h2 {
 		left: 3vw;
 		height: calc(100vh - 6vw);
 		top: 3vw;
-		z-index: 1;
 
 		.logo {
 			top: 3vw;
@@ -113,7 +148,6 @@ h2 {
 		.controls {
 			top: 3vw;
 			right: 3vw;
-			z-index: 1;
 
 			.controls-item {
 				border: 2px solid #d9d9d9;
@@ -140,6 +174,7 @@ h2 {
 						border: 1px solid var(--sectionColor);
 						transition: border 1s ease-in;
 						width: 100%;
+						background: var(--sectionColor);
 					}
 				}
 
@@ -149,72 +184,7 @@ h2 {
 				}
 			}
 		}
-
-		// nav {
-		// 	top: 72px;
-		// 	right: 200px;
-		// 	transform: translateX(20px);
-		// 	opacity: 0;
-		// 	transition: all 0.3s ease-in-out;
-
-		// 	&.show-nav {
-		// 		transform: translateX(0);
-		// 		opacity: 1;
-		// 	}
-
-		// ul {
-		// 	display: flex;
-		// 	justify-content: center;
-		// 	align-items: center;
-		// 	list-style: none;
-		// 	padding-right: 15px;
-
-		// 	li {
-		// 		margin: 5px;
-
-		// 		a {
-		// 			padding: 0 25px;
-		// 		}
-		// 	}
-		// }
 	} // right
-
-	nav {
-		// top: 72px;
-		// right: 200px;
-		transform: translateX(20px);
-		opacity: 0;
-		transition: all 0.3s ease-in-out;
-		height: 100%;
-		background: #000000;
-		height: calc(100vh - 6vw);
-		width: 94vw;
-		max-width: 700px;
-		right: 3vw;
-		top: 3vw;
-
-		&.show-nav {
-			transform: translateX(0);
-			opacity: 1;
-		}
-		ul {
-			display: flex;
-			justify-content: space-around;
-			flex-direction: column;
-			align-items: center;
-			list-style: none;
-			padding-right: 15px;
-			height: 100%;
-
-			li {
-				margin: 5px;
-
-				a {
-					padding: 0 25px;
-				}
-			}
-		}
-	}
 }
 
 .wrapper {
@@ -279,7 +249,7 @@ h2 {
 			opacity: 0;
 
 			width: 100%;
-			z-index: 1;
+
 			transition: all 1s ease;
 
 			.column {
@@ -297,7 +267,6 @@ h2 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			z-index: 1;
 		}
 		&.section2 {
 			background-image: url("../images/stand-out.jpg");
