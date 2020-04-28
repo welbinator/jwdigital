@@ -33,7 +33,7 @@ a {
 }
 
 h2 {
-  font-size: clamp(calc(100vw / 45.5), 3.5em, 3.5em);
+  font-size: clamp(calc(100vw / 55.5), 2em, 3em);
 }
 
 /** variables **/
@@ -108,8 +108,10 @@ h2 {
 
 .frame .right .controls .controls-item {
   border: 2px solid #d9d9d9;
-  width: 50px;
-  height: 50px;
+  width: calc(2.5vw + 10px);
+  height: calc(2.5vw + 10px);
+  min-width: 50px;
+  min-height: 50px;
   margin-top: -2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,10 +202,10 @@ h2 {
 
 .wrapper .cta {
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 3vh;
   background: none;
   border: 2px solid white;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: var(--sectionColor);
 }
@@ -223,6 +225,7 @@ h2 {
           align-items: center;
   margin: auto;
   position: relative;
+  padding: 24vw;
 }
 
 .wrapper section .overlay {
@@ -244,10 +247,18 @@ h2 {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   opacity: 0;
-  width: 75%;
+  width: 100%;
   z-index: 1;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.wrapper section .row .column p {
+  font-size: clamp(calc(100vw / 90), 1.5em, 3em);
+}
+
+.wrapper section .row .column hr {
+  margin: 1vh 0 2vh 0;
 }
 
 .wrapper section.section1 {
