@@ -235,14 +235,14 @@ h2 {
 }
 
 .wrapper section.show .row {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
 }
 
 .wrapper section .row {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   opacity: 0;
   width: 75%;
   z-index: 1;
