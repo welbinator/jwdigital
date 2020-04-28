@@ -90,6 +90,13 @@ h2 {
 			top: 3vw;
 			left: 3vw;
 
+			.svg-logo {
+				width: 9vw;
+				min-width: 120px;
+				max-width: 200px;
+				height: auto;
+			}
+
 			img {
 				width: 9vw;
 				min-width: 120px;

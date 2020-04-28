@@ -83,6 +83,13 @@ h2 {
   left: 3vw;
 }
 
+.frame .left .logo .svg-logo {
+  width: 9vw;
+  min-width: 120px;
+  max-width: 200px;
+  height: auto;
+}
+
 .frame .left .logo img {
   width: 9vw;
   min-width: 120px;
