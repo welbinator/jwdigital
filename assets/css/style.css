@@ -144,7 +144,9 @@ h2 {
 }
 
 .frame .right .controls .controls-item .menu-icon .line-container {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--sectionColor);
+  -webkit-transition: border 1s ease-in;
+  transition: border 1s ease-in;
   width: 100%;
 }
 

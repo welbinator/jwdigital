@@ -136,7 +136,8 @@ h2 {
 					cursor: pointer;
 
 					.line-container {
-						border: 1px solid #d9d9d9;
+						border: 1px solid var(--sectionColor);
+						transition: border 1s ease-in;
 						width: 100%;
 					}
 				}
