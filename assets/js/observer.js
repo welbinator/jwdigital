@@ -10,21 +10,25 @@ function ctaCheck(entries) {
 	entries.forEach((entry) => {
 		const newClass = entry.target.className;
 
-		if (entry.isIntersecting) {
-			console.log(newClass);
+		if (!entry.isIntersecting) {
+			entry.target.classList.remove("show");
+		} else if (entry.isIntersecting) {
+			// console.log(newClass);
 
-			const section1 = "#01A1E5";
-			const section2 = "#f78259";
-			const section3 = "#eb4559";
+			const section1color = "#01A1E5";
+			const section2color = "#f78259";
+			const section3color = "#eb4559";
+
+			let sections = document.querySelectorAll("section");
 
 			let root = document.documentElement;
-
+			entry.target.classList.add("show");
 			if (newClass == "section1") {
-				root.style.setProperty("--sectionColor", section1);
+				root.style.setProperty("--sectionColor", section1color);
 			} else if (newClass == "section2") {
-				root.style.setProperty("--sectionColor", section2);
+				root.style.setProperty("--sectionColor", section2color);
 			} else {
-				root.style.setProperty("--sectionColor", section3);
+				root.style.setProperty("--sectionColor", section3color);
 			}
 		}
 	});

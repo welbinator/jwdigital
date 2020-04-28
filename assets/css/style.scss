@@ -228,9 +228,17 @@ h2 {
 			position: absolute;
 			opacity: 0.3;
 		}
+
+		&.show .row {
+			transform: translateX(0);
+			opacity: 1;
+		}
 		.row {
+			transform: translateX(50px);
+			opacity: 0;
 			width: 75%;
 			z-index: 1;
+			transition: all 1s ease;
 		}
 
 		&.section1 {

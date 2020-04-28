@@ -234,9 +234,20 @@ h2 {
   opacity: 0.3;
 }
 
+.wrapper section.show .row {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .wrapper section .row {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
   width: 75%;
   z-index: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .wrapper section.section1 {
