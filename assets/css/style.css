@@ -38,10 +38,7 @@ h2 {
 
 /** variables **/
 :root {
-  --section1color: #ea6227;
-  --section2color: #342ead;
-  --section3color: #f2a51a;
-  --sectionColor: #ea6227;
+  --sectionColor: #00abf3;
 }
 
 .abs {

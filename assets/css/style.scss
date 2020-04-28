@@ -38,10 +38,7 @@ h2 {
 }
 /** variables **/
 :root {
-	--section1color: #ea6227;
-	--section2color: #342ead;
-	--section3color: #f2a51a;
-	--sectionColor: #ea6227;
+	--sectionColor: #00abf3;
 }
 
 .abs {
@@ -75,7 +72,9 @@ h2 {
 		width: 100%;
 		height: 100vh;
 		// border: 50px solid #30475e;
+		// border: 3vw solid var(--borderColor);
 		border: 3vw solid var(--sectionColor);
+
 		left: 0;
 		top: 0;
 		transition: border 1s ease;

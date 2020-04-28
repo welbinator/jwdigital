@@ -13,8 +13,8 @@ function ctaCheck(entries) {
 		if (entry.isIntersecting) {
 			console.log(newClass);
 
-			const section1 = "#f78259";
-			const section2 = "#aeefec";
+			const section1 = "#01A1E5";
+			const section2 = "#f78259";
 			const section3 = "#eb4559";
 
 			let root = document.documentElement;
