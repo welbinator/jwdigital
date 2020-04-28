@@ -14,7 +14,7 @@ body {
 	font-size: 62.5%;
 	font-weight: 600;
 	// background: #222831;
-	background: #30475e;
+	// background: #30475e;
 }
 h1,
 h2,
@@ -91,7 +91,9 @@ h2 {
 			left: 3vw;
 
 			img {
-				width: 100px;
+				width: 9vw;
+				min-width: 120px;
+				max-width: 200px;
 				height: auto;
 			}
 		}
