@@ -158,8 +158,8 @@ nav ul li a {
 
 .frame .right .controls .controls-item {
   border: 2px solid #d9d9d9;
-  width: calc(2.5vw + 10px);
-  height: calc(2.5vw + 10px);
+  width: 60px;
+  height: 60px;
   min-width: 50px;
   min-height: 50px;
   margin-top: -2px;
