@@ -176,6 +176,20 @@ nav {
 						width: 100%;
 						background: var(--sectionColor);
 					}
+
+					.hide {
+						display: none;
+					}
+
+					.line-container.nav-open {
+						border: 1px solid white;
+					}
+					.line-container.nav-open.two {
+						transform: rotate(-45deg) translate(5px, -6px);
+					}
+					.line-container.nav-open.one {
+						transform: rotate(45deg) translate(3px, 4px);
+					}
 				}
 
 				img.icon {

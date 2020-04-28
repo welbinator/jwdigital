@@ -201,6 +201,24 @@ nav ul li a {
   background: var(--sectionColor);
 }
 
+.frame .right .controls .controls-item .menu-icon .hide {
+  display: none;
+}
+
+.frame .right .controls .controls-item .menu-icon .line-container.nav-open {
+  border: 1px solid white;
+}
+
+.frame .right .controls .controls-item .menu-icon .line-container.nav-open.two {
+  -webkit-transform: rotate(-45deg) translate(5px, -6px);
+          transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.frame .right .controls .controls-item .menu-icon .line-container.nav-open.one {
+  -webkit-transform: rotate(45deg) translate(3px, 4px);
+          transform: rotate(45deg) translate(3px, 4px);
+}
+
 .frame .right .controls .controls-item img.icon {
   width: auto;
   height: 20px;
