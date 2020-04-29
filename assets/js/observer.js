@@ -18,6 +18,7 @@ function ctaCheck(entries) {
 			const section1color = "#01A1E5";
 			const section2color = "#f78259";
 			const section3color = "#eb4559";
+			const section4color = "#FFBC42";
 
 			let sections = document.querySelectorAll("section");
 
@@ -27,8 +28,10 @@ function ctaCheck(entries) {
 				root.style.setProperty("--sectionColor", section1color);
 			} else if (newClass == "section2") {
 				root.style.setProperty("--sectionColor", section2color);
-			} else {
+			} else if (newClass == "section3") {
 				root.style.setProperty("--sectionColor", section3color);
+			} else {
+				root.style.setProperty("--sectionColor", section4color);
 			}
 		}
 	});
