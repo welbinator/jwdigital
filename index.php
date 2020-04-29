@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/form.css">
 	</head>
 	<body>
 		<div class="app">
@@ -102,15 +103,21 @@
 					</div>
 				</section>
 				<section class="section4">
-					<div class="hubspot-form-container" style="width: 80%;">
-					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-  hbspt.forms.create({
-	portalId: "5843116",
-	formId: "bc637217-767b-4afe-9e92-161f4922a11e"
-});
-</script>
-</div>						
+				<div class="overlay" style="opacity: .5;"></div>
+				
+				<div class="row">
+        <div class="column">
+
+					<?php include 'includes/form.php' ?>
+
+						  </div>
+						  </div>
+
+
+
+  
+    
+      						
 					
 				</section>
 				<!-- <footer>
@@ -120,7 +127,7 @@
 		</div>
 		<!-- <script src="/assets/js/rellax.js"></script> -->
 		<script src="/assets/js/observer.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script src="/assets/js/script.js"></script>
 		<!-- <script>
 			
 			function initRellax() {
