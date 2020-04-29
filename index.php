@@ -69,7 +69,7 @@
 							<hr class="rellax1" data-rellax-speed="-3">
 
 							<h2 class="rellax1" data-rellax-speed="-3">Let's turn your idea into money</h2>
-							<button class="cta">Get Started</button>
+							<a class="cta" href="/#section4">Get Started</a>
 						</div>
 					</div>
 				</section>
@@ -84,7 +84,7 @@
 							<hr class="rellax1" data-rellax-speed="-2">
 
 							<h2 class="rellax1" data-rellax-speed="-2">How do you plan to differentiate yourself?</h2 class="rellax">
-								<button class="cta">Get Started</button>
+								<a class="cta" href="/#section4">Get Started</a>
 						</div>
 					</div>
 				</section>
@@ -98,11 +98,11 @@
 							<hr class="rellax1" data-rellax-speed="-2">
 
 							<h2 class="rellax1" data-rellax-speed="-2">Need help identifying your target market?</h2 class="rellax" data-rellax-speed="-1">
-								<button class="cta">Get Started</button>
+								<a class="cta" href="/#section4">Get Started</a>
 						</div>
 					</div>
 				</section>
-				<section class="section4">
+				<section class="section4" id="section4">
 				<div class="overlay" style="opacity: .5;"></div>
 				
 				<div class="row">

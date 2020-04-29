@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 62.5%;
@@ -252,6 +256,7 @@ nav ul li a {
   border: 2px solid white;
   font-size: 24px;
   font-weight: bold;
+  display: inline-block;
   color: var(--sectionColor);
 }
 
