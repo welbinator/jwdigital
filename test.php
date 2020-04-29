@@ -6,9 +6,22 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/form.css">
 	</head>
 	<body>
 		<div class="app">
+			<nav class="nav fix">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Lorem</a></li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Adipisci</a>
+					</li>
+					<li class="nav__item"><a href="#" class="nav__link">Natus</a></li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Beatae</a>
+					</li>
+				</ul>
+			</nav>
 			<div class="frame fix">
 				<div class="border abs" id="border"></div>
 				<div class="left abs">
@@ -24,15 +37,11 @@
 					<div class="controls abs">
 						<div class="controls-item" onclick="showNav()">
 							<div class="menu-icon">
-								<div class="line-container line-container-1">
-									<span class="line line-1"></span>
-								</div>
-								<div class="line-container line-container-2">
-									<span class="line line-2"></span>
-								</div>
-								<div class="line-container line-container-3">
-									<span class="line line-3"></span>
-								</div>
+								<div class="line-container straight"></div>
+								<div class="line-container straight"></div>
+								<div class="line-container straight"></div>
+								<div class="line-container x one"></div>
+								<div class="line-container x two"></div>
 							</div>
 						</div>
 						<div class="controls-item">
@@ -42,31 +51,22 @@
 							<img class="icon" src="assets/images/linkedin-icon.svg" />
 						</div>
 					</div>
-					<nav class="nav abs">
-						<ul class="nav__list">
-							<li class="nav__item"><a href="#" class="nav__link">Lorem</a></li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Adipisci</a>
-							</li>
-							<li class="nav__item"><a href="#" class="nav__link">Natus</a></li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Beatae</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+					
+				</div><!-- right -->
+
+				
 			</div>
 			<!-- frame -->
 			<div class="wrapper">
 				
 				<section class="section1">
 					
-					<div class="overlay"></div>
+					<div class="overlay" style="opacity: .5;"></div>
 					<div class="row">
 						<div class="column">
 							<p class="rellax1" data-rellax-speed="-3">It's business time</p cl>
 
-							<hr class="rellax1" data-rellax-speed="-3" style="width: 100px; margin: 20px 0 50px 0;" />
+							<hr class="rellax1" data-rellax-speed="-3">
 
 							<h2 class="rellax1" data-rellax-speed="-3">Let's turn your idea into money</h2>
 							<button class="cta">Get Started</button>
@@ -81,7 +81,7 @@
 						<div class="column">
 							<p class="rellax1" data-rellax-speed="-2">Be unique</p>
 
-							<hr class="rellax1" data-rellax-speed="-2" style="width: 100px; margin: 20px 0 50px 0;" />
+							<hr class="rellax1" data-rellax-speed="-2">
 
 							<h2 class="rellax1" data-rellax-speed="-2">How do you plan to differentiate yourself?</h2 class="rellax">
 								<button class="cta">Get Started</button>
@@ -90,17 +90,156 @@
 				</section>
 				<section class="section3">
 					
-					<div class="overlay"></div>
+					<div class="overlay" style="opacity: .5;"></div>
 					<div class="row">
 						<div class="column">
 							<p class="rellax1" data-rellax-speed="-2">Find your customers</p class="rellax" data-rellax-speed="-1">
 
-							<hr class="rellax1" data-rellax-speed="-2" style="width: 100px; margin: 20px 0 50px 0;" />
+							<hr class="rellax1" data-rellax-speed="-2">
 
 							<h2 class="rellax1" data-rellax-speed="-2">Need help identifying your target market?</h2 class="rellax" data-rellax-speed="-1">
 								<button class="cta">Get Started</button>
 						</div>
 					</div>
+				</section>
+				<section class="section4">
+				<div class="overlay" style="opacity: .5;"></div>
+				
+					<?php 
+
+ use plugins\PHPMailer\PHPMailer\PHPMailer;
+  use plugins\PHPMailer\PHPMailer\Exception;
+
+require 'plugins/PHPMailer/src/Exception.php';
+require 'plugins/PHPMailer/src/PHPMailer.php';
+require 'plugins/PHPMailer/src/SMTP.php';
+
+
+if(isset($_POST['submit'])) {
+  
+  
+  $post_subject = $_POST['subject'];
+  $post_body = $_POST['message'];
+  $post_from = $_POST['from'];
+  $post_name = $_POST['name'];
+  
+  
+  
+ $mail = new PHPMailer();
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = '465';
+$mail->isHTML();
+$mail->Username = 'james.welbes@gmail.com';
+$mail->Password = 'Isaiah117';
+$mail->SetFrom($post_from);
+$mail->Subject = $post_subject;
+$mail->Body = '<h3> From: ' . $post_name . '</h3><br><p>' . $post_from . '</p><br>' . $post_body;
+$mail->AddAddress('james.welbes@gmail.com');
+  $mail->Send();
+  
+$reply = new PHPMailer();
+$reply->isSMTP();
+$reply->SMTPAuth = true;
+$reply->SMTPSecure = 'ssl';
+$reply->Host = 'smtp.gmail.com';
+$reply->Port = '465';
+$reply->isHTML();
+$reply->Username = 'james.welbes@gmail.com';
+$reply->Password = 'Isaiah117';
+$reply->SetFrom($post_from);
+$reply->Subject = $post_subject;
+$reply->Body = '<p>Thank you for reaching out!</p><p>I will get back to you shortly</p>';
+$reply->AddAddress($post_from);
+  $reply->Send();
+  
+}
+
+
+?>
+
+
+
+  
+    
+      <div class="row">
+        <div class="column">
+        <div data-aos="fade-up">
+		  <!-- <h2 id="contactH2" class="text-white mb-4 text-center" data-aos="fade-up">Contact Me</h2> -->
+		  <p class="rellax1" data-rellax-speed="-2">Let's grab a coffee</p class="rellax" data-rellax-speed="-1">
+
+							<hr class="rellax1" data-rellax-speed="-2">
+
+							<h2 class="rellax1" data-rellax-speed="-2">I'd love to schedule a meeting, phone or video chat.</h2 class="rellax" data-rellax-speed="-1">
+<br><br><br><br>
+          <div class="form-row">
+            <div class="col-md-12">
+             
+              
+
+              <div class="form-row">
+                <div class="col-md-12">
+
+                  
+
+                  <form action="" method="post" enctype="multipart/form-data">
+                    
+                    
+
+                    <div class="form-row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-white" for="fname">First Name</label>
+                        <input type="text" name="name" id="fname" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-white" for="lname">Last Name</label>
+                        <input type="text" id="lname" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      
+                      <div class="col-md-12">
+                        <label class="text-white" for="email">Email</label> 
+                        <input type="email" name="from" id="from" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      
+                      <div class="col-md-12">
+                        <label class="text-white" for="subject">Subject</label> 
+                        <input type="subject" name="subject" id="subject" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group mb-5">
+                      <div class="col-md-12">
+                        <label class="text-white" for="message">Message</label> 
+                        <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                      <div class="col-md-12">
+                        <input type="submit" value="Send Message" name="submit" class="form-btn">
+                      </div>
+                    </div>
+
+        
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+	  </div>
+</div>						
+					
 				</section>
 				<!-- <footer>
 					<p>Footer Yo</p>
@@ -109,7 +248,7 @@
 		</div>
 		<script src="/assets/js/rellax.js"></script>
 		<script src="/assets/js/observer.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script src="/assets/js/script.js"></script>
 		<script>
 			
 			function initRellax() {
