@@ -246,10 +246,10 @@ $reply->AddAddress($post_from);
 				</footer> -->
 			</div>
 		</div>
-		<script src="/assets/js/rellax.js"></script>
+		<!-- <script src="/assets/js/rellax.js"></script> -->
 		<script src="/assets/js/observer.js"></script>
 		<script src="/assets/js/script.js"></script>
-		<script>
+		<!-- <script>
 			
 			function initRellax() {
 			
@@ -257,6 +257,6 @@ $reply->AddAddress($post_from);
 
 			}
 			initRellax();
-		</script>
+		</script> -->
 	</body>
 </html>
