@@ -75,15 +75,21 @@ $reply->AddAddress($post_from);
                   <form action="" method="post" enctype="multipart/form-data">
                     
                     
-
+<!-- 
                     <div class="form-row form-group">
+
                       <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-white" for="fname">First Name</label>
+                        <label class="text-white" for="fname">Name</label>
                         <input type="text" name="name" id="fname" class="form-control">
                       </div>
-                      <div class="col-md-6">
-                        <label class="text-white" for="lname">Last Name</label>
-                        <input type="text" id="lname" class="form-control">
+                            
+                    </div> -->
+
+                    <div class="form-row form-group">
+                      
+                      <div class="col-md-12">
+                        <label class="text-white" for="name">Name</label> 
+                        <input type="text" name="name" id="from" class="form-control">
                       </div>
                     </div>
 
@@ -95,13 +101,13 @@ $reply->AddAddress($post_from);
                       </div>
                     </div>
 
-                    <div class="form-row form-group">
+                    <!-- <div class="form-row form-group">
                       
                       <div class="col-md-12">
                         <label class="text-white" for="subject">Subject</label> 
                         <input type="subject" name="subject" id="subject" class="form-control">
                       </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-row form-group mb-5">
                       <div class="col-md-12">
