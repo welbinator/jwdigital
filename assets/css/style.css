@@ -68,7 +68,7 @@ section {
 	height: auto;
 	width: 94vw;
 	margin: auto;
-	background-size: cover;
+	background-size: cover !important;
 	padding: 8vw;
 }
 .section3 {
@@ -124,14 +124,14 @@ section .inner {
 }
 .wrapper section.section1 {
 	background-image: url("../images/light-bulb.jpg");
-	background-size: cover;
+
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .wrapper section.section2 {
 	background-image: url("../images/stand-out.jpg");
-	background-size: cover;
+
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -140,7 +140,7 @@ section .inner {
 }
 .wrapper section.section3 {
 	background-image: url("../images/client.jpg");
-	background-size: cover;
+
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	/* margin-bottom: calc(100vw * 0.03); */
