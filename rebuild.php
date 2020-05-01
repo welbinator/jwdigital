@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
         <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-        <!-- <link rel="stylesheet" href="assets/css/portfolio.css"> -->
+		<!-- <link rel="stylesheet" href="assets/css/portfolio.css"> -->
+		<link rel="stylesheet" href="assets/css/form.css">
 		<link rel="stylesheet" href="assets/css/slider.css" />
 		<link rel="stylesheet" href="assets/css/rebuild.css" />
 	</head>
@@ -14,13 +15,9 @@
 		<nav class="nav fix">
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Adipisci</a>
-				</li>
-				<li class="nav__item"><a href="#" class="nav__link">Natus</a></li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Beatae</a>
-				</li>
+				<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+				<li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+				<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="left abs">
@@ -193,18 +190,22 @@
 				</div>
 			</section>
 
-			<section class="section2">
+			<section class="section2" id="about">
                 
                 <div class="inner">
                     <p>What we do</p cl>
 
                         <hr>
 
-                        <h3>JW Digital specializes in responsive, effective websites</h3>
+						<h3>JW Digital specializes in responsive, effective websites</h3>
+						
+						<p class="description">Our goals are your goals. Whether you're looking for more leads, exposure, an eCommerce platform, or just an informational hub for your clients and/or employees, we can help.</p>
+						<p class="description">All of our websites are mobile responsive, load fast, and utilize best on-page SEO practices so customers can find your business.</p>
+						
                         <a class="cta" href="/#contact">Examples</a>
                 </div>
             </section>
-			<section class="section3">
+			<section class="section3" id="portfolio">
                 <div class="inner">
                 <div class="card-wrapper">
                     <div class="card">
@@ -229,30 +230,35 @@
                         </div>
 					</div>
 					<div class="card">
-                        <img src="assets/images/fanstree-card.jpg">
+                        <img src="assets/images/chromebookguide-card.jpg">
                         <div class="card-inner">
-                            <h2>Fanstree</h2>
-                            <a href="https://fanstree.com/" target="_blank">Visit Website</a>
+                            <h2>Chromebook Guide</h2>
+                            <a href="https://chromebook.guide/" target="_blank">Visit Website</a>
                         </div>
 					</div>
 					<div class="card">
-                        <img src="assets/images/fanstree-card.jpg">
+                        <img src="assets/images/americlean-card.jpg">
                         <div class="card-inner">
-                            <h2>Fanstree</h2>
-                            <a href="https://fanstree.com/" target="_blank">Visit Website</a>
+                            <h2>Americlean Iowa</h2>
+                            <a href="https://americleaniowa.com/" target="_blank">Visit Website</a>
                         </div>
 					</div>
 					<div class="card">
-                        <img src="assets/images/fanstree-card.jpg">
+                        <img src="assets/images/stephanie-card.jpg">
                         <div class="card-inner">
-                            <h2>Fanstree</h2>
-                            <a href="https://fanstree.com/" target="_blank">Visit Website</a>
+                            <h2>Stephanie's Creations</h2>
+                            <a href="https://stephaniesdress.com/" target="_blank">Visit Website</a>
                         </div>
                     </div>
                    
                 </div>
             </div>
-        </section>
+		</section>
+		<section class="section4" id="contact">
+			<div class="inner">
+				<?php include 'includes/form.php' ?>
+			</div>
+		</section>
 		</div>
 		<!-- wrapper -->
 

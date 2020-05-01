@@ -37,7 +37,10 @@ label {
 	margin-bottom: 0.5rem;
 	font-size: 14px;
 }
-
+textarea#message,
+input#from {
+	border-bottom: 1px solid white;
+}
 .form-group {
 	margin-bottom: 1rem;
 }
@@ -54,6 +57,7 @@ label {
 
 .form-row.form-group {
 	height: 50px;
+	margin: 36px 0px;
 }
 
 .col-1,
