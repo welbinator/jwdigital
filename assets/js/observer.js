@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll("section");
 
 const options = {
-	threshold: 0.5,
+	// threshold: 0.5,
 };
 
 let observer = new IntersectionObserver(ctaCheck, options);
