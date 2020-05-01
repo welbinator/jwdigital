@@ -56,7 +56,7 @@ body {
 	/* color: #000000; */
 	margin: 0;
 }
-#home .slide.active .caption h2 {
+#home .slide.active .caption h3 {
 	opacity: 0;
 	animation: captionText 0.5s ease forwards;
 	animation-delay: 1.2s;
