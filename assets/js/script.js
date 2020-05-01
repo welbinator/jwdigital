@@ -4,9 +4,13 @@ function showNav() {
 	document.querySelector("nav").classList.toggle("show-nav");
 
 	menuIcon.classList.toggle("nav-open");
-	// navbars.forEach((navbar) => {
-	// 	navbar.classList.toggle("hide");
-	// });
+	console.log("success!");
 }
+
+const navLinks = document.querySelectorAll("nav ul li");
+
+navLinks.forEach((link) => {
+	link.addEventListener("click", showNav);
+});
 
 // find height of image and make card match it
