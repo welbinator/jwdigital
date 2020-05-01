@@ -121,10 +121,10 @@
 					</div>
 				</div>
 				<div class="controls-item">
-					<img class="icon" src="assets/images/fb-icon.svg" />
+					<a href="https://www.facebook.com/cedarrapidswebdesign/" target="_blank"><img class="icon" src="assets/images/fb-icon.svg" /></a>
 				</div>
 				<div class="controls-item">
-					<img class="icon" src="assets/images/linkedin-icon.svg" />
+					<a href="https://www.linkedin.com/in/jameswelbes/" target="_blank"><img class="icon" src="assets/images/linkedin-icon.svg" /></a>
 				</div>
 			</div>
 		</div>
