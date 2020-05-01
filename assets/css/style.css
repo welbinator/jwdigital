@@ -379,4 +379,5 @@ nav ul li a {
 	height: auto;
 	opacity: 0.5;
 	top: 0;
+	transition: opacity 0.3s ease;
 }

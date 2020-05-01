@@ -261,7 +261,7 @@
 		<!-- wrapper -->
 
 
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.js"></script>
+      
 		<script src="assets/js/slider.js"></script>
 		<script src="assets/js/observer.js"></script>
 		<script src="assets/js/script.js"></script>

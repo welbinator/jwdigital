@@ -13,4 +13,26 @@ navLinks.forEach((link) => {
 	link.addEventListener("click", showNav);
 });
 
-// find height of image and make card match it
+// cards hover
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+	card.addEventListener("mouseover", function () {
+		const image = card.childNodes[1];
+		if (image.nodeName == "IMG") {
+			console.log("YESS" + image);
+			console.log(image);
+			image.style.opacity = ".6";
+		}
+	});
+
+	card.addEventListener("mouseout", function () {
+		const image = card.childNodes[1];
+		if (image.nodeName == "IMG") {
+			console.log("YESS" + image);
+			console.log(image);
+			image.style.opacity = ".5";
+		}
+	});
+});
