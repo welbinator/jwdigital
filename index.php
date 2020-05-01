@@ -125,6 +125,9 @@
 				<div class="controls-item">
 					<a href="https://www.linkedin.com/in/jameswelbes/" target="_blank"><img class="icon" src="assets/images/linkedin-icon.svg" /></a>
 				</div>
+				<div class="controls-item">
+					<a href="#contact" target="_blank"><img class="icon" src="assets/images/email.svg" /></a>
+				</div>
 			</div>
 		</div>
 		<div class="wrapper">
