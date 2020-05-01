@@ -109,6 +109,7 @@ section .inner {
 	font-weight: bold;
 	display: inline-block;
 	color: var(--sectionColor);
+	transition: all 0.5s ease;
 }
 /* .wrapper section .overlay {
 	background: black;
@@ -225,6 +226,7 @@ section .inner {
 	border: 1px solid var(--sectionColor);
 	width: 100%;
 	background: var(--sectionColor);
+	transition: all 0.5s ease;
 }
 
 .right .controls-container .controls-item .menu-icon .line-container.x {
@@ -366,6 +368,7 @@ nav ul li a {
 .card-inner a {
 	font-size: clamp(calc(100vw / 85.5), 2em, 2em);
 	background: var(--sectionColor);
+	transition: all 0.5s ease;
 	font-weight: bold;
 	padding: 10px 20px;
 }
