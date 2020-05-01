@@ -23,8 +23,7 @@
 			<div class="logo abs">
 				<!-- <a href="/"><img src="assets/images/jwdigital-logo.svg" /></a> -->
 
-				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
-				><svg
+				<a href="#home"><svg
 					class="svg-logo"
 					width="100%"
 					height="100%"
@@ -106,7 +105,7 @@
 							style="fill: #00b3ff;"
 						/>
 					</g>
-				</svg>
+				</svg></a>
 			</div>
 		</div>
 		<div class="right abs">
