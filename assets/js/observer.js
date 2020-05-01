@@ -26,12 +26,16 @@ function ctaCheck(entries) {
 			entry.target.classList.add("show");
 			if (newClass == "section1") {
 				root.style.setProperty("--sectionColor", section1color);
+				console.log(newClass);
 			} else if (newClass == "section2") {
 				root.style.setProperty("--sectionColor", section2color);
+				console.log(newClass);
 			} else if (newClass == "section3") {
 				root.style.setProperty("--sectionColor", section3color);
+				console.log(newClass);
 			} else {
 				root.style.setProperty("--sectionColor", section4color);
+				console.log(newClass);
 			}
 		}
 	});

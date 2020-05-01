@@ -59,80 +59,59 @@
 			<!-- frame -->
 			<div class="wrapper">
 				
-				<section class="section1">
-					
-					<div class="overlay" style="opacity: .5;"></div>
-					<div class="row">
-						<div class="column">
-							<p class="rellax1" data-rellax-speed="-3">It's business time</p cl>
+			<section class="home">
+     <div class="slider">
+        <div class="slide active" style="background-image: url('images/slide-1.jpg')">
+            <div class="container">
+                <div class="caption">
+                    <h1>1. Winter Collection 2020</h1>
+                    <p>Lorem ipsum dummy text goes here.</p>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/slide-2.jpg')">
+            <div class="container">
+                <div class="caption">
+                    <h1>2. Winter Collection 2020</h1>
+                    <p>Lorem ipsum dummy text goes here.</p>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/slide-3.jpg')">
+            <div class="container">
+                <div class="caption">
+                    <h1>3. Winter Collection 2020</h1>
+                    <p>Lorem ipsum dummy text goes here.</p>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+        </div>
+     </div>
+   
+    <!-- controls  -->
+    <div class="controls">
+        <div class="prev"><</div>
+        <div class="next">></div>
+    </div>
 
-							<hr class="rellax1" data-rellax-speed="-3">
+    <!-- indicators -->
+    <div class="indicator">
+    </div>
 
-							<h2 class="rellax1" data-rellax-speed="-3">Let's turn your idea into money</h2>
-							<button class="cta">Get Started</button>
-						</div>
-					</div>
-				</section>
-				<section class="section2">
-					
-					<div class="overlay"></div>
-					
-					<div class="row">
-						<div class="column">
-							<p class="rellax1" data-rellax-speed="-2">Be unique</p>
-
-							<hr class="rellax1" data-rellax-speed="-2">
-
-							<h2 class="rellax1" data-rellax-speed="-2">How do you plan to differentiate yourself?</h2 class="rellax">
-								<button class="cta">Get Started</button>
-						</div>
-					</div>
-				</section>
-				<section class="section3">
-					
-					<div class="overlay" style="opacity: .5;"></div>
-					<div class="row">
-						<div class="column">
-							<p class="rellax1" data-rellax-speed="-2">Find your customers</p class="rellax" data-rellax-speed="-1">
-
-							<hr class="rellax1" data-rellax-speed="-2">
-
-							<h2 class="rellax1" data-rellax-speed="-2">Need help identifying your target market?</h2 class="rellax" data-rellax-speed="-1">
-								<button class="cta">Get Started</button>
-						</div>
-					</div>
-				</section>
-				<section class="section4">
-				<div class="overlay" style="opacity: .5;"></div>
-				<div class="row">
-        <div class="column">
-
-					<?php include 'includes/form.php' ?>
-
-						  </div>
-						  </div>
-
-  
-    
-      						
-					
-				</section>
+  </section>
 				<!-- <footer>
 					<p>Footer Yo</p>
 				</footer> -->
 			</div>
 		</div>
-		<!-- <script src="/assets/js/rellax.js"></script> -->
+		<script src="/plugins/siema-1.5.1/src/siema.js"></script>
 		<script src="/assets/js/observer.js"></script>
 		<script src="/assets/js/script.js"></script>
-		<!-- <script>
+		<script>
 			
-			function initRellax() {
-			
-			var rellax = new Rellax(".rellax");
-
-			}
-			initRellax();
-		</script> -->
+			new Siema();
+		</script>
 	</body>
 </html>

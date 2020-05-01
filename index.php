@@ -125,17 +125,12 @@
 				</footer> -->
 			</div>
 		</div>
-		<!-- <script src="/assets/js/rellax.js"></script> -->
+		
 		<script src="/assets/js/observer.js"></script>
 		<script src="/assets/js/script.js"></script>
-		<!-- <script>
+		<script>
 			
-			function initRellax() {
 			
-			var rellax = new Rellax(".rellax");
-
-			}
-			initRellax();
-		</script> -->
+		</script>
 	</body>
 </html>

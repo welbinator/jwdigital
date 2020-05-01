@@ -8,3 +8,5 @@ function showNav() {
 	// 	navbar.classList.toggle("hide");
 	// });
 }
+
+// find height of image and make card match it

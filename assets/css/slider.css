@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#home {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	/* background-image: url(../images/light-bulb.jpg); */
+}
+
+#home .slide {
+	/* position: absolute; */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	display: none;
+	padding: 0 15px;
+	animation: slide 2s ease;
+}
+#home .slide.active {
+	display: flex;
+}
+@keyframes slide {
+	0% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+#home .container {
+	flex-grow: 1;
+}
+#home .caption {
+	width: 80%;
+	margin: auto;
+}
+#home .caption h1 {
+	font-size: 42px;
+	/* color: #000000; */
+	margin: 0;
+}
+#home .slide.active .caption h2 {
+	opacity: 0;
+	animation: captionText 0.5s ease forwards;
+	animation-delay: 1.2s;
+}
+#home .slide.active .caption hr {
+	opacity: 0;
+	animation: captionText 0.5s ease forwards;
+	animation-delay: 1.2s;
+}
+#home .caption p {
+	/* font-size: 18px;
+	margin: 15px 0 30px; */
+	/* color: #222222; */
+}
+#home .slide.active .caption p {
+	opacity: 0;
+	animation: captionText 0.5s ease forwards;
+	animation-delay: 1s;
+}
+#home .caption a {
+	display: inline-block;
+	/* padding: 10px 30px; */
+	/* background-color: #000000; */
+	text-decoration: none;
+	/* color: #ffffff; */
+}
+
+#home .slide.active .caption a {
+	opacity: 0;
+	animation: captionText 0.5s ease forwards;
+	animation-delay: 1.4s;
+}
+
+@keyframes captionText {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+	.controls {
+		display: none;
+	}
+}
