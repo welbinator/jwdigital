@@ -43,11 +43,11 @@ const icons = document.querySelectorAll(".icon");
 
 icons.forEach((icon) => {
 	icon.addEventListener("mouseover", function () {
-		icon.classList.add("play-animation");
+		icon.classList.add("spin");
 		console.log("spin");
 	});
 	icon.addEventListener("mouseout", function () {
-		icon.classList.remove("play-animation");
+		icon.classList.remove("spin");
 		console.log("unspin");
 	});
 });
