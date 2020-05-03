@@ -120,13 +120,13 @@
 					</div>
 				</div>
 				<div class="controls-item">
-					<a href="https://www.facebook.com/cedarrapidswebdesign/" target="_blank"><img class="icon" src="assets/images/fb-icon.svg" /></a>
+					<a href="https://www.facebook.com/cedarrapidswebdesign/" target="_blank"><img class="icon rotate-90-cw" src="assets/images/fb-icon.svg" /></a>
 				</div>
 				<div class="controls-item">
-					<a href="https://www.linkedin.com/in/jameswelbes/" target="_blank"><img class="icon" src="assets/images/linkedin-icon.svg" /></a>
+					<a href="https://www.linkedin.com/in/jameswelbes/" target="_blank"><img class="icon rotate-90-cw" src="assets/images/linkedin-icon.svg" /></a>
 				</div>
 				<div class="controls-item">
-					<a href="#contact"><img class="icon" src="assets/images/email.svg" /></a>
+					<a href="#contact"><img class="icon rotate-90-cw" src="assets/images/email.svg" /></a>
 				</div>
 			</div>
 		</div>

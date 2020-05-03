@@ -265,6 +265,10 @@ section .inner {
 .right .controls-container .controls-item img.icon {
 	width: auto;
 	height: 20px;
+	animation-play-state: paused;
+}
+.icon.play-animation {
+	animation-play-state: running;
 }
 nav {
 	-webkit-transform: translateX(20px);

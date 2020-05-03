@@ -36,3 +36,18 @@ cards.forEach((card) => {
 		}
 	});
 });
+
+// rotate icons on hover
+
+const icons = document.querySelectorAll(".icon");
+
+icons.forEach((icon) => {
+	icon.addEventListener("mouseover", function () {
+		icon.classList.add("play-animation");
+		console.log("spin");
+	});
+	icon.addEventListener("mouseout", function () {
+		icon.classList.remove("play-animation");
+		console.log("unspin");
+	});
+});
