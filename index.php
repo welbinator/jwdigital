@@ -198,7 +198,7 @@
 
                         <hr>
 
-						<h3>JW Digital specializes in responsive, effective websites</h3>
+						<h3>JW Digital specializes in responsive, effective websites </h3>
 						
 						<p class="description">Our goals are your goals. Whether you're looking for more leads, exposure, an eCommerce platform, or just an informational hub for your clients and/or employees, we can help.</p>
 						<p class="description">All of our websites are mobile responsive, load fast, and utilize best on-page SEO practices so customers can find your business.</p>
