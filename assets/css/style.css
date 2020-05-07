@@ -101,7 +101,7 @@ section .inner {
 	margin: 1vh 0 2vh 0;
 }
 .wrapper .cta {
-	padding: 20px;
+	padding: 10px 20px;
 	margin-top: 3vh;
 	background: none;
 	border: 2px solid white;
@@ -109,23 +109,19 @@ section .inner {
 	font-weight: bold;
 	display: inline-block;
 	color: var(--sectionColor);
-	transition: all 08;
+	transition: all 0.8s ease;
 }
-/* .wrapper section .overlay {
-	background: black;
-	width: 94vw;
-	margin: auto;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.3;
-} */
+.cta-container {
+	transition: transform 0.3s ease;
+	display: inline-block;
+}
+.cta-container:hover {
+	transform: scale(0.98);
+}
 
 .overlay {
 	background: black;
 	width: 94vw;
-	/* margin: auto; */
 	height: 100%;
 	position: fixed;
 	left: 3vw;
