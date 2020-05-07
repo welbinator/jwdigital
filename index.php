@@ -21,7 +21,7 @@
 		</nav>
 		<div class="left abs">
 			<div class="logo abs">
-				<!-- <a href="/"><img src="assets/images/jwdigital-logo.svg" /></a> -->
+				
 
 				<a href="#home"><svg
 					class="svg-logo"

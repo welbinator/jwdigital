@@ -149,11 +149,9 @@ section .inner {
 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	/* margin-bottom: calc(100vw * 0.03); */
 }
 
 .wrapper section.section4 {
-	/* top: -3vw; */
 	background: blue;
 	background-image: url("../images/coffee.jpg");
 	margin-bottom: calc(100vw * 0.03);
@@ -261,7 +259,6 @@ section .inner {
 .right .controls-container .controls-item img.icon {
 	width: auto;
 	height: 20px;
-	/* animation-play-state: paused; */
 }
 .icon {
 	-webkit-transform: rotate(0);
@@ -272,9 +269,7 @@ section .inner {
 	-webkit-transform: rotate(20deg);
 	transform: rotate(20deg);
 }
-/* .icon.play-animation {
-	animation-play-state: running !important;
-} */
+
 nav {
 	-webkit-transform: translateX(20px);
 	transform: translateX(20px);
@@ -335,7 +330,7 @@ nav ul li a:hover {
 nav ul li {
 	margin: 5px;
 	width: 100%;
-	/* border: 1px solid red; */
+
 	height: 200px;
 }
 
@@ -355,9 +350,7 @@ nav ul li a {
 	opacity: 0;
 	pointer-events: none;
 }
-/* section {
-	height: auto;
-} */
+
 #stuffs {
 	display: flex;
 }
@@ -403,8 +396,6 @@ nav ul li a {
 	padding: 10px 20px;
 }
 .card img {
-	/* object-fit: cover; */
-	/* position: absolute; */
 	width: 100%;
 	height: auto;
 	opacity: 0.5;

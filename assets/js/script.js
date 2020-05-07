@@ -4,7 +4,6 @@ function showNav() {
 	document.querySelector("nav").classList.toggle("show-nav");
 
 	menuIcon.classList.toggle("nav-open");
-	console.log("success!");
 }
 
 const navLinks = document.querySelectorAll("nav ul li");
@@ -21,8 +20,6 @@ cards.forEach((card) => {
 	card.addEventListener("mouseover", function () {
 		const image = card.childNodes[1];
 		if (image.nodeName == "IMG") {
-			console.log("YESS" + image);
-			console.log(image);
 			image.style.opacity = ".6";
 		}
 	});
@@ -30,8 +27,6 @@ cards.forEach((card) => {
 	card.addEventListener("mouseout", function () {
 		const image = card.childNodes[1];
 		if (image.nodeName == "IMG") {
-			console.log("YESS" + image);
-			console.log(image);
 			image.style.opacity = ".5";
 		}
 	});
@@ -44,10 +39,8 @@ const icons = document.querySelectorAll(".icon");
 icons.forEach((icon) => {
 	icon.addEventListener("mouseover", function () {
 		icon.classList.add("spin");
-		console.log("spin");
 	});
 	icon.addEventListener("mouseout", function () {
 		icon.classList.remove("spin");
-		console.log("unspin");
 	});
 });
