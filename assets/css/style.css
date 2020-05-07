@@ -270,11 +270,11 @@ section .inner {
 .icon {
 	-webkit-transform: rotate(0);
 	transform: rotate(0);
-	transition: all 0.8s ease;
+	transition: all 0.5s ease;
 }
 .icon.spin {
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
 }
 /* .icon.play-animation {
 	animation-play-state: running !important;
