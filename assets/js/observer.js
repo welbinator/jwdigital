@@ -3,6 +3,7 @@ const sections = document.querySelectorAll("section");
 const options = {
 	threshold: 0.3,
 };
+let slide;
 
 let observer = new IntersectionObserver(ctaCheck, options);
 
@@ -21,6 +22,8 @@ function ctaCheck(entries) {
 			let sections = document.querySelectorAll("section");
 
 			let root = document.documentElement;
+			slide = entry.target.getAttribute("slide");
+
 			entry.target.classList.add("show");
 			if (newClass == "section1") {
 				root.style.setProperty("--sectionColor", section1color);

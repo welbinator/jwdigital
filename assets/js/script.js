@@ -44,3 +44,28 @@ icons.forEach((icon) => {
 		icon.classList.remove("spin");
 	});
 });
+
+// next section button
+
+const home = document.querySelector("#home").getAttribute("id");
+const nextButton = document.querySelector("#next-container");
+let currentSection;
+let currentSectionId;
+let nextSection;
+let nextSectionId;
+
+nextButton.addEventListener("click", jump);
+function jump(s) {
+	slide = parseInt(slide, 10);
+	nextSection = slide + 1;
+	nextSection = document.querySelector(".section" + nextSection);
+
+	if (slide == sections.length) {
+		window.scrollTo(0, home);
+	} else {
+		nextSectionId = nextSection.getAttribute("id");
+		let nextSlide = document.getElementById(nextSectionId).offsetTop;
+
+		window.scrollTo(0, nextSlide);
+	}
+}
