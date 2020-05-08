@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="border"></div>
-		<div id="next-container" style="display: none;"></div>
+		<div id="next-container"></div>
 		<nav class="nav fix">
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -132,7 +132,7 @@
 			</div>
 		</div>
 		<div class="wrapper">
-			<section class="section1" id="home">
+			<section class="section1" id="home" slide="1">
                 <div class="overlay"></div>
 				<div class="inner">
 				<div class="slider">
@@ -183,7 +183,7 @@
 				</div>
 			</section>
 
-			<section class="section2" id="about">
+			<section class="section2" id="about" slide="2">
                 
                 <div class="inner">
                     <p>What we do</p cl>
@@ -198,7 +198,7 @@
                         <div class="cta-container"><a class="cta" href="/#portfolio">Examples</a></div>
                 </div>
             </section>
-			<section class="section3" id="portfolio">
+			<section class="section3" id="portfolio" slide="3">
                 <div class="inner">
                 <div class="card-wrapper">
                     <div class="card">
@@ -247,7 +247,7 @@
                 </div>
             </div>
 		</section>
-		<section class="section4" id="contact">
+		<section class="section4" id="contact" slide="4">
 			<div class="inner">
 				<?php include 'includes/form.php' ?>
 			</div>
@@ -257,8 +257,8 @@
 
 
       
-		<script src="assets/js/slider.js"></script>
-		<script src="assets/js/observer.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script type="text/javascript" src="assets/js/slider.js"></script>
+		<script type="text/javascript" src="assets/js/observer.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
 	</body>
 </html>
