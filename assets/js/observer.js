@@ -3,6 +3,19 @@ const sections = document.querySelectorAll("section");
 const options = {
 	threshold: 0.3,
 };
+
+window.addEventListener("resize", setThreshold);
+
+function setThreshold() {
+	if (window.innerWidth > 768) {
+		options.threshold = 0.7;
+		console.log(options.threshold);
+	} else {
+		options.threshold = 0.3;
+		console.log(options.threshold);
+	}
+}
+
 let slide;
 
 let observer = new IntersectionObserver(ctaCheck, options);

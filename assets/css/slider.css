@@ -4,10 +4,6 @@ body {
 	overflow-x: hidden;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 #home {
 	height: 100vh;
 	overflow: hidden;
@@ -79,18 +75,16 @@ body {
 #home .slide.active .caption a {
 	opacity: 0;
 	animation: captionCTA 0.9s ease forwards;
-	animation-delay: 1.9s;
+	animation-delay: 1.7s;
 }
 
 @keyframes captionText {
 	0% {
 		opacity: 0;
-		/* transform: translateY(50px); */
 		transform: scale(0.8);
 	}
 	100% {
 		opacity: 1;
-		/* transform: translateX(0px); */
 		transform: scale(1);
 	}
 }

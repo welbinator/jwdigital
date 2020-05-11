@@ -109,14 +109,16 @@ section .inner {
 	font-weight: bold;
 	display: inline-block;
 	color: var(--sectionColor);
-	transition: all 0.8s ease;
+	transition: all 0.5s ease;
 }
 .cta-container {
 	transition: transform 0.3s ease;
 	display: inline-block;
 }
-.cta-container:hover {
-	transform: scale(0.98);
+
+.cta-container:hover .cta {
+	border-color: var(--sectionColor);
+	color: white;
 }
 
 .overlay {
