@@ -45,6 +45,13 @@ h2 {
 h3 {
 	font-size: clamp(calc(100vw / 55.5), 2em, 3em);
 }
+button,
+a,
+.menu-icon,
+#next-container,
+input[type="submit"] {
+	cursor: pointer !important;
+}
 .border {
 	border: 3vw solid var(--sectionColor);
 	position: fixed;
@@ -100,7 +107,7 @@ section .inner {
 .wrapper section .inner hr {
 	margin: 1vh 0 2vh 0;
 }
-.wrapper .cta {
+.cta {
 	padding: 10px 20px;
 	margin-top: 3vh;
 	background: none;
@@ -110,6 +117,7 @@ section .inner {
 	display: inline-block;
 	color: var(--sectionColor);
 	transition: all 0.5s ease;
+	/* cursor: pointer; */
 }
 .cta-container {
 	transition: transform 0.3s ease;
@@ -215,7 +223,7 @@ section .inner {
 	height: 100%;
 	width: 100%;
 	padding: 15px;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 
 .right .controls-container .controls-item .menu-icon .line-container {
@@ -270,6 +278,11 @@ section .inner {
 .icon.spin {
 	-webkit-transform: rotate(20deg);
 	transform: rotate(20deg);
+}
+.spin #facebook,
+.spin #linkedin,
+.spin #email {
+	fill: var(--sectionColor);
 }
 
 nav {
@@ -428,7 +441,7 @@ nav ul li a {
 	z-index: 999999;
 	left: 50%;
 	transform: translateX(-50%);
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 #next-container::before,
 #next-container::after {

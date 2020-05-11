@@ -117,7 +117,7 @@ $reply->AddAddress($post_from);
                     </div>
 
                     <div class="form-row form-group">
-                      <div class="col-md-12">
+                      <div class="cta-container">
                         <input type="submit" value="Send Message" name="submit" class="cta">
                       </div>
                     </div>

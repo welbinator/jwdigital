@@ -43,6 +43,9 @@ input#from {
 .form-group {
 	margin-bottom: 1rem;
 }
+.form-group .col-md-12 {
+	padding-left: 0;
+}
 .form-row {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -51,7 +54,7 @@ input#from {
 	flex-wrap: wrap;
 	margin-right: -10px;
 	margin-left: -10px;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 .form-row.form-group {
