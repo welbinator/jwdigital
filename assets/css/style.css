@@ -279,6 +279,11 @@ section .inner {
 	-webkit-transform: rotate(20deg);
 	transform: rotate(20deg);
 }
+#facebook,
+#linkedin,
+#email {
+	transition: fill 0.9s ease;
+}
 .spin #facebook,
 .spin #linkedin,
 .spin #email {
