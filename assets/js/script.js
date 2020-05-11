@@ -27,7 +27,7 @@ cards.forEach((card) => {
 	card.addEventListener("mouseout", function () {
 		const image = card.childNodes[1];
 		if (image.nodeName == "IMG") {
-			image.style.opacity = ".5";
+			image.style.opacity = "1";
 		}
 	});
 });

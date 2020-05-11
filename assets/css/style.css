@@ -391,16 +391,32 @@ nav ul li a {
 .card-inner a {
 	font-size: clamp(calc(100vw / 85.5), 2em, 2em);
 	background: var(--sectionColor);
-	transition: all 08;
+	transition: all 0.5s ease;
 	font-weight: bold;
 	padding: 10px 20px;
+	opacity: 0;
+	transform: scale(0.9);
 }
 .card img {
 	width: 100%;
 	height: auto;
-	opacity: 0.5;
+	/* opacity: 0.5; */
 	top: 0;
 	transition: opacity 0.3s ease;
+}
+.card h2 {
+	transform: translateY(50px);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.card:hover h2 {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.card:hover .card-inner a {
+	opacity: 1;
+	transform: scale(1);
 }
 #next-container {
 	position: fixed;
