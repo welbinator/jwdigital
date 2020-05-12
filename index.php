@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="border"></div>
-		<div id="next-container"></div>
+		<div id="next-container"><?php include "includes/next-arrow.php" ?></div>
 		<nav class="nav fix">
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
