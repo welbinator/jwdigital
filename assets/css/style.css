@@ -40,7 +40,7 @@ a {
 }
 
 h2 {
-	font-size: clamp(calc(100vw / 55.5), 3em, 3em);
+	font-size: clamp(calc(100vw / 80), 2em, 3em);
 }
 h3 {
 	font-size: clamp(calc(100vw / 55.5), 2em, 3em);
@@ -91,7 +91,7 @@ section.show .inner {
 	padding: 0;
 }
 .section3 .inner {
-	width: 92vw;
+	width: 69vw;
 	padding-top: 26vh;
 }
 section .inner {
@@ -383,7 +383,7 @@ nav ul li a {
 }
 .card {
 	width: 100%;
-	max-width: 500px;
+	max-width: 400px;
 	background: black;
 	margin: 10px;
 	position: relative;
@@ -394,7 +394,8 @@ nav ul li a {
 	transition: transform 0.3s ease;
 }
 .card:hover {
-	transform: scale(1.05);
+	transform: scale(1.25);
+	z-index: 9999;
 }
 .card-inner {
 	display: flex;
