@@ -410,13 +410,13 @@ nav ul li a {
 	height: 100%;
 }
 .card-inner a {
-	font-size: clamp(calc(100vw / 85.5), 2em, 2em);
-	background: var(--sectionColor);
-	transition: all 0.5s ease;
-	font-weight: bold;
-	padding: 10px 20px;
-	opacity: 0;
-	transform: scale(0.9);
+    font-size: clamp(calc(100vw / 120), 2em, 2em);
+    background: var(--sectionColor);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    padding: 4px 16px;
+    opacity: 0;
+    transform: scale(0.9);
 }
 .card img {
 	width: 100%;
