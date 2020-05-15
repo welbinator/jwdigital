@@ -49,8 +49,8 @@ icons.forEach((icon) => {
 
 const home = document.querySelector("#home").getAttribute("id");
 const nextButton = document.querySelector("#next-container");
-let currentSection;
-let currentSectionId;
+// let currentSection;
+// let currentSectionId;
 let nextSection;
 let nextSectionId;
 
