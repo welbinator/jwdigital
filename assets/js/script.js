@@ -69,3 +69,43 @@ function jump(s) {
 		window.scrollTo(0, nextSlide);
 	}
 }
+
+// team section
+
+function onHover() {
+	const devinCard = document.querySelector("#devin");
+	const devinCardDivs = document.querySelectorAll("#devin div");
+
+	const jamesCard = document.querySelector("#james");
+	const jamesCardDivs = document.querySelectorAll("#james div");
+
+	devinCard.addEventListener("mouseover", function () {
+		devinCard.classList.add("active");
+		devinCardDivs.forEach((card) => {
+			card.classList.add("active");
+		});
+	});
+
+	devinCard.addEventListener("mouseout", function () {
+		devinCard.classList.remove("active");
+		devinCardDivs.forEach((card) => {
+			card.classList.remove("active");
+		});
+	});
+
+	jamesCard.addEventListener("mouseover", function () {
+		jamesCard.classList.add("active");
+		jamesCardDivs.forEach((card) => {
+			card.classList.add("active");
+		});
+	});
+
+	jamesCard.addEventListener("mouseout", function () {
+		jamesCard.classList.remove("active");
+		jamesCardDivs.forEach((card) => {
+			card.classList.remove("active");
+		});
+	});
+}
+
+onHover();
