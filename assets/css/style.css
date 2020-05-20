@@ -211,6 +211,7 @@ section.show .inner {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	position: relative;
 }
 
 .right .controls-container .controls-item .menu-icon {
@@ -250,7 +251,7 @@ section.show .inner {
 	display: block !important;
 }
 
-.right .controls-container .controls-item .menu-icon.nav-open .straight {
+.right .controls-container .controls-item .menu-icon.nav-open .straight {.right .controls-container .controls-item 
 	display: none;
 }
 
@@ -259,8 +260,13 @@ section.show .inner {
 	.controls-item
 	.menu-icon.nav-open
 	.line-container.x.two {
-	-webkit-transform: rotate(-45deg) translate(5px, -6px);
-	transform: rotate(-45deg) translate(5px, -6px);
+	/* -webkit-transform: rotate(-45deg) translate(5px, -6px);
+	transform: rotate(-45deg) translate(5px, -6px); */
+
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+	width: 50%;
 }
 
 .right
@@ -268,8 +274,13 @@ section.show .inner {
 	.controls-item
 	.menu-icon.nav-open
 	.line-container.x.one {
-	-webkit-transform: rotate(45deg) translate(3px, 4px);
-	transform: rotate(45deg) translate(3px, 4px);
+	/* -webkit-transform: rotate(45deg) translate(3px, 4px);
+	transform: rotate(45deg) translate(3px, 4px); */
+
+	position: absolute;
+	top: 50%;
+	transform: rotate(-45deg);
+	width: 50%;
 }
 
 .right .controls-container .controls-item img.icon {
