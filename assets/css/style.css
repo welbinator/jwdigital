@@ -251,7 +251,7 @@ section.show .inner {
 	display: block !important;
 }
 
-.right .controls-container .controls-item .menu-icon.nav-open .straight {.right .controls-container .controls-item 
+.right .controls-container .controls-item .menu-icon.nav-open .straight {
 	display: none;
 }
 
@@ -260,9 +260,6 @@ section.show .inner {
 	.controls-item
 	.menu-icon.nav-open
 	.line-container.x.two {
-	/* -webkit-transform: rotate(-45deg) translate(5px, -6px);
-	transform: rotate(-45deg) translate(5px, -6px); */
-
 	position: absolute;
 	top: 50%;
 	transform: rotate(45deg);
@@ -367,8 +364,6 @@ nav ul li a:hover {
 nav ul li {
 	margin: 5px;
 	width: 100%;
-
-	height: 200px;
 }
 
 nav ul li a {
