@@ -102,7 +102,7 @@
 			<section class="section2" id="about" slide="2">
                 
                 <div class="inner">
-                    <p>What we do</p cl>
+                    <p>What we do</p>
 
                         <hr>
 
@@ -116,7 +116,9 @@
             </section>
 			<section class="section3" id="portfolio" slide="3">
                 <div class="inner">
-                 <!-- Swiper -->
+                <p>Some of our work</p>
+				<hr>
+				<h3>We like to let our work speak for itself</h3>
   <div class="swiper-container">
     <div class="swiper-wrapper">
 	  <div class="swiper-slide" style="background-image:url(/assets/images/finnprep-card.jpg)"></div>
@@ -143,6 +145,7 @@
 			</div>
 		</section>
 		</div>
+
 		<!-- wrapper -->
 
 
@@ -158,6 +161,8 @@
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
+	  initialSlide: 2,
+	
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
