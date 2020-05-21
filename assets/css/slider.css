@@ -10,7 +10,7 @@ body {
 	position: relative;
 }
 
-#home .slide {
+#home .my-slide {
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -22,7 +22,7 @@ body {
 	padding: 0 15px;
 	animation: slide 2s ease-in-out;
 }
-#home .slide.active {
+#home .my-slide.active {
 	display: flex;
 }
 @keyframes slide {
@@ -55,24 +55,24 @@ body {
 	text-decoration: none;
 }
 
-#home .slide.active .caption h3 {
+#home .my-slide.active .caption h3 {
 	opacity: 0;
 	animation: captionText 0.9s ease forwards;
 	animation-delay: 1.2s;
 }
-#home .slide.active .caption hr {
-	opacity: 0;
-	animation: captionText 0.9s ease forwards;
-	animation-delay: 1.2s;
-}
-
-#home .slide.active .caption p {
+#home .my-slide.active .caption hr {
 	opacity: 0;
 	animation: captionText 0.9s ease forwards;
 	animation-delay: 1.2s;
 }
 
-#home .slide.active .caption a {
+#home .my-slide.active .caption p {
+	opacity: 0;
+	animation: captionText 0.9s ease forwards;
+	animation-delay: 1.2s;
+}
+
+#home .my-slide.active .caption a {
 	opacity: 0;
 	animation: captionCTA 0.9s ease forwards;
 	animation-delay: 1.7s;

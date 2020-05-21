@@ -1,4 +1,4 @@
-const slides = document.querySelector(".slider").children;
+const slides = document.querySelector(".my-slider").children;
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const indicator = document.querySelector(".indicator");

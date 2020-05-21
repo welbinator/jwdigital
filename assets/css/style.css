@@ -98,6 +98,7 @@ section.show .inner {
 }
 .section3 .inner {
 	width: 69vw;
+	padding-top: 20vh;
 }
 
 .wrapper section .inner p {
@@ -573,4 +574,22 @@ nav ul li a {
 	max-width: 30px;
 	--margin: 0 1px 0 1px;
 	border-radius: 25px;
+}
+
+/* swiper js */
+.swiper-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.swiper-buttons {
+	position: relative;
+	width: 300px;
+	margin: auto;
 }

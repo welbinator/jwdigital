@@ -7,6 +7,7 @@
         
 		<link rel="stylesheet" href="assets/css/form.css">
 		<link rel="stylesheet" href="assets/css/slider.css" />
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
@@ -50,8 +51,8 @@
 			<section class="section1" id="home" slide="1">
                 <div class="overlay"></div>
 				<div class="inner">
-				<div class="slider">
-						<div class="slide active">
+				<div class="my-slider">
+						<div class="my-slide active">
 							<div class="container">
 								<div class="caption">
 									<p>It's business time</p cl>
@@ -63,7 +64,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="slide">
+						<div class="my-slide">
 							<div class="container">
 								<div class="caption">
 									<p>Be unique</p>
@@ -75,7 +76,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="slide">
+						<div class="my-slide">
 							<div class="container">
 								<div class="caption">
 										<p>Find your customers</p class="rellax" data-rellax-speed="-1">
@@ -115,51 +116,25 @@
             </section>
 			<section class="section3" id="portfolio" slide="3">
                 <div class="inner">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="assets/images/finnprep-card.jpg">
-                        <div class="card-inner">
-                            <h2>FinnPREP</h2>
-                            <a href="https://finnprep.com" target="_blank">Visit Website</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/horizons-card.jpg">
-                        <div class="card-inner">
-                            <h2>Horizons Family</h2>
-                            <a href="http://www.horizonsfamily.org/" target="_blank">Visit Website</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/fanstree-card.jpg">
-                        <div class="card-inner">
-                            <h2>Fanstree</h2>
-                            <a href="https://fanstree.com/" target="_blank">Visit Website</a>
-                        </div>
-					</div>
-					<div class="card">
-                        <img src="assets/images/chromebookguide-card.jpg">
-                        <div class="card-inner">
-                            <h2>Chromebook Guide</h2>
-                            <a href="https://chromebook.guide/" target="_blank">Visit Website</a>
-                        </div>
-					</div>
-					<div class="card">
-                        <img src="assets/images/americlean-card.jpg">
-                        <div class="card-inner">
-                            <h2>Americlean Iowa</h2>
-                            <a href="https://americleaniowa.com/" target="_blank">Visit Website</a>
-                        </div>
-					</div>
-					<div class="card">
-                        <img src="assets/images/stephanie-card.jpg">
-                        <div class="card-inner">
-                            <h2>Stephanie's Creations</h2>
-                            <a href="https://stephaniesdress.com/" target="_blank">Visit Website</a>
-                        </div>
-                    </div>
-                   
-                </div>
+                 <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+	  <div class="swiper-slide" style="background-image:url(/assets/images/finnprep-card.jpg)"></div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/americlean-card.jpg)"></div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/chromebookguide-card.jpg)"></div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/fanstree-card.jpg)"></div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/horizons-card.jpg)"></div>
+     
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+	
+  </div>
+	<div class="swiper-buttons">
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
             </div>
 		</section>
 		<section class="section4" id="contact" slide="4">
@@ -174,6 +149,31 @@
       
 		<script type="text/javascript" src="assets/js/slider.js"></script>
 		<script type="text/javascript" src="assets/js/observer.js"></script>
+		<script type="text/javascript" src="assets/js/swiper.min.js"></script>
 		<script type="text/javascript" src="assets/js/script.js"></script>
+
+		<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+	  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
 	</body>
 </html>
