@@ -71,7 +71,7 @@ input[type="submit"] {
 	left: 3vw;
 }
 section {
-	min-height: calc(100vh - 6vw);
+	min-height: calc(100vh - 3vw);
 	height: auto;
 	width: 94vw;
 	margin: auto;
