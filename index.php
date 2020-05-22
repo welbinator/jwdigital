@@ -179,14 +179,14 @@
 	  initialSlide: 2,
 	  updateOnWindowResize: true,
 	  loop: true,
-	  loopedSlides: 1,
+	//   loopedSlides: 1,
 	
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-		// loopedSlides: 6,
+	
 		
         slideShadows : true,
       },
