@@ -105,6 +105,9 @@ section.show .inner {
 	transform: translate(-50%, -50%) scale(1);
 	opacity: 1;
 }
+section:last-child {
+	margin-bottom: 3vw !important;
+}
 #intro {
 	background: black;
 	display: flex;
@@ -467,14 +470,32 @@ nav ul li a {
 }
 
 .next-arrow {
+	width: 70%;
+	transition: all 0.5s ease;
+}
+svg.next-arrow.flip {
+	transform: rotate(180deg);
+}
+#next-arrow {
+	transition: stroke 0.5s ease;
+	stroke-width: 1px;
+}
+div#next-container {
+	border: 2px solid white;
 	position: fixed;
 	bottom: calc(6vw - 10px);
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 9;
-}
-#next-arrow {
-	transition: stroke 0.5s ease;
+	width: 10vw;
+	height: 10vw;
+	min-height: 50px;
+	min-width: 50px;
+	max-width: 60px;
+	max-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #next-container:hover #next-arrow {
 	stroke: var(--sectionColor);

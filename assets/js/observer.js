@@ -22,7 +22,7 @@ const observer = new IntersectionObserver(ctaCheck, options);
 
 function ctaCheck(entries) {
 	entries.forEach((entry) => {
-		const newClass = entry.target.getAttribute("id");
+		const currentSlide = entry.target.getAttribute("id");
 
 		if (!entry.isIntersecting) {
 			entry.target.classList.remove("show");
@@ -35,17 +35,27 @@ function ctaCheck(entries) {
 			const sections = document.querySelectorAll("section");
 
 			const root = document.documentElement;
+			const nextArrow = document.querySelector(".next-arrow");
+			const lastSlide = document
+				.querySelector("section:last-child")
+				.getAttribute("id");
 			slide = entry.target.getAttribute("slide");
 
 			entry.target.classList.add("show");
-			if (newClass == "home") {
+			if (currentSlide == "home") {
 				root.style.setProperty("--sectionColor", section1color);
-			} else if (newClass == "about") {
+			} else if (currentSlide == "about") {
 				root.style.setProperty("--sectionColor", section2color);
-			} else if (newClass == "portfolio") {
+			} else if (currentSlide == "portfolio") {
 				root.style.setProperty("--sectionColor", section3color);
 			} else {
 				root.style.setProperty("--sectionColor", section4color);
+			}
+
+			if (currentSlide == lastSlide) {
+				nextArrow.classList.add("flip");
+			} else {
+				nextArrow.classList.remove("flip");
 			}
 		}
 	});
