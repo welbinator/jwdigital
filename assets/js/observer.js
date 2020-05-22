@@ -18,11 +18,11 @@ function setThreshold() {
 
 let slide;
 
-let observer = new IntersectionObserver(ctaCheck, options);
+const observer = new IntersectionObserver(ctaCheck, options);
 
 function ctaCheck(entries) {
 	entries.forEach((entry) => {
-		const newClass = entry.target.className;
+		const newClass = entry.target.getAttribute("id");
 
 		if (!entry.isIntersecting) {
 			entry.target.classList.remove("show");
@@ -32,17 +32,17 @@ function ctaCheck(entries) {
 			const section3color = "#eb4559";
 			const section4color = "#FFBC42";
 
-			let sections = document.querySelectorAll("section");
+			const sections = document.querySelectorAll("section");
 
-			let root = document.documentElement;
+			const root = document.documentElement;
 			slide = entry.target.getAttribute("slide");
 
 			entry.target.classList.add("show");
-			if (newClass == "section1") {
+			if (newClass == "home") {
 				root.style.setProperty("--sectionColor", section1color);
-			} else if (newClass == "section2") {
+			} else if (newClass == "about") {
 				root.style.setProperty("--sectionColor", section2color);
-			} else if (newClass == "section3") {
+			} else if (newClass == "portfolio") {
 				root.style.setProperty("--sectionColor", section3color);
 			} else {
 				root.style.setProperty("--sectionColor", section4color);

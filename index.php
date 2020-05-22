@@ -22,7 +22,7 @@
 			</ul>
 		</nav>
 		<div class="left abs">
-			<div class="logo abs"><a href="#home"><?php include "includes/logo.php" ?></a>
+			<div class="logo abs"><a href="#home"><?php include "includes/logo-anim.php" ?></a>
 			</div>
 		</div>
 		<div class="right abs">
@@ -48,7 +48,8 @@
 			</div>
 		</div>
 		<div class="wrapper">
-			<section class="section1" id="home" slide="1">
+			
+			<section id="home" slide="1">
                 <div class="overlay"></div>
 				<div class="inner">
 				<div class="my-slider">
@@ -99,7 +100,7 @@
 				</div>
 			</section>
 
-			<section class="section2" id="about" slide="2">
+			<section id="about" slide="2">
 			<div class="overlay"></div>
                 
                 <div class="inner">
@@ -115,7 +116,7 @@
                         <div class="cta-container"><a class="cta" href="/#portfolio">Examples</a></div>
                 </div>
             </section>
-			<section class="section3" id="portfolio" slide="3">
+			<section id="portfolio" slide="3">
 			<div class="overlay"></div>
                 <div class="inner">
                 <p>Some of our work</p>
@@ -151,12 +152,13 @@
 	</div>
             </div>
 		</section>
-		<section class="section4" id="contact" slide="4">
+		<section id="contact" slide="4">
 		<div class="overlay"></div>
 			<div class="inner">
 				<?php include 'includes/form.php' ?>
 			</div>
 		</section>
+		
 		</div>
 
 		<!-- wrapper -->
