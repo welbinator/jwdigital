@@ -123,11 +123,21 @@
 				<h3>We like to let our work speak for itself</h3>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-	  <div class="swiper-slide" style="background-image:url(/assets/images/finnprep-card.jpg)"></div>
-	  <div class="swiper-slide" style="background-image:url(/assets/images/americlean-card.jpg)"></div>
-	  <div class="swiper-slide" style="background-image:url(/assets/images/chromebookguide-card.jpg)"></div>
-	  <div class="swiper-slide" style="background-image:url(/assets/images/fanstree-card.jpg)"></div>
-	  <div class="swiper-slide" style="background-image:url(/assets/images/horizons-card.jpg)"></div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/finnprep-card.jpg)">
+	<a target="_blank" href="https://finnprep.com">Visit Site</a>
+</div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/americlean-card.jpg)">
+	  <a target="_blank" href="https://americleaniowa.com">Visit Site</a>
+	</div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/chromebookguide-card.jpg)">
+	  <a target="_blank" href="https://chromebook.guide">Visit Site</a>
+	</div>
+	  <div class="swiper-slide" style="background-image:url(/assets/images/fanstree-card.jpg)">
+	  <a target="_blank" href="https://fanstree.com">Visit Site</a>
+	</div>
+	  <!-- <div class="swiper-slide" style="background-image:url(/assets/images/horizons-card.jpg)">
+	  <a href="https://horizonsfamily.org">Visit Site</a>
+	</div> -->
      
     </div>
     <!-- Add Pagination -->
@@ -165,6 +175,7 @@
       centeredSlides: true,
       slidesPerView: 'auto',
 	  initialSlide: 2,
+	  updateOnWindowResize: true,
 	  loop: true,
 	  loopedSlides: 1,
 	
