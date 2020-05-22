@@ -75,11 +75,12 @@ section {
 	height: auto;
 	width: 94vw;
 	margin: auto;
-	background-size: cover !important;
+	/* background-size: cover !important; */
 	padding: 8vw;
 	position: relative;
+	background: black;
 }
-section .inner {
+/* section .inner {
 	opacity: 0;
 	transform: scale(0.8);
 	transition: all 1s ease;
@@ -89,9 +90,19 @@ section .inner {
 	margin: 0 auto;
 	z-index: 0;
 	position: relative;
+} */
+section .inner {
+	opacity: 0;
+	transition: all 1s ease;
+	width: 64vw;
+	z-index: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.8);
 }
 section.show .inner {
-	transform: scale(1);
+	transform: translate(-50%, -50%) scale(1);
 	opacity: 1;
 }
 #intro {
@@ -127,7 +138,6 @@ section.show .inner {
 	display: inline-block;
 	color: var(--sectionColor);
 	transition: all 0.5s ease;
-	/* cursor: pointer; */
 }
 .cta-container {
 	transition: transform 0.3s ease;
@@ -150,31 +160,21 @@ section.show .inner {
 	pointer-events: none;
 }
 .wrapper section#home {
-	background-image: url("../images/light-bulb.jpg");
-
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .wrapper section#about {
-	background-image: url("../images/stand-out.jpg");
-
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 #about .description {
 	margin: 15px;
 }
-.wrapper section#portfolio {
-	background-image: url("../images/client.jpg");
 
+.wrapper section#portfolio {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}
-
-.wrapper section#contact {
-	/* background: blue; */
-	background-image: url("../images/coffee.jpg");
 }
 
 .left {
