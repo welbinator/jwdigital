@@ -640,3 +640,10 @@ nav ul li a {
 	transform: translate(-50%, -50%);
 	opacity: 1;
 }
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--sectionColor);
+}
+.swiper-pagination-bullet-active {
+	background: var(--sectionColor);
+}
