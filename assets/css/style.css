@@ -116,7 +116,7 @@ section.show .inner {
 }
 #portfolio .inner {
 	width: 69vw;
-	padding-top: 20vh;
+	/* padding-top: 20vh; */
 }
 #portfolio .overlay {
 	opacity: 0.7;
