@@ -26,7 +26,7 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = '465';
 $mail->isHTML();
 $mail->Username = 'james.welbes@gmail.com';
-$mail->Password = 'Isaiah117';
+$mail->Password = 'Isaiah117!';
 $mail->SetFrom($post_from);
 $mail->Subject = $post_subject;
 $mail->Body = '<h3> From: ' . $post_name . '</h3><br><p>' . $post_from . '</p><br>' . $post_body;
@@ -41,7 +41,7 @@ $reply->Host = 'smtp.gmail.com';
 $reply->Port = '465';
 $reply->isHTML();
 $reply->Username = 'james.welbes@gmail.com';
-$reply->Password = 'Isaiah117';
+$reply->Password = 'Isaiah117!';
 $reply->SetFrom($post_from);
 $reply->Subject = $post_subject;
 $reply->Body = '<p>Thank you for reaching out!</p><p>I will get back to you shortly</p>';
@@ -75,15 +75,7 @@ $reply->AddAddress($post_from);
                   <form action="" method="post" enctype="multipart/form-data">
                     
                     
-<!-- 
-                    <div class="form-row form-group">
 
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-white" for="fname">Name</label>
-                        <input type="text" name="name" id="fname" class="form-control">
-                      </div>
-                            
-                    </div> -->
 
                     <div class="form-row form-group">
                       
@@ -101,13 +93,7 @@ $reply->AddAddress($post_from);
                       </div>
                     </div>
 
-                    <!-- <div class="form-row form-group">
-                      
-                      <div class="col-md-12">
-                        <label class="text-white" for="subject">Subject</label> 
-                        <input type="subject" name="subject" id="subject" class="form-control">
-                      </div>
-                    </div> -->
+                    
 
                     <div class="form-row form-group mb-5">
                       <div class="col-md-12">
