@@ -126,7 +126,7 @@ function jump(s) {
 
 // onHover();
 
-const logo = document.querySelectorAll("#logo-anim path");
-for (let i = 0; i < logo.length; i++) {
-	console.log(`light blue path ${i} is ${logo[i].getTotalLength()}`);
-}
+// const logo = document.querySelectorAll("#logo-anim path");
+// for (let i = 0; i < logo.length; i++) {
+// 	console.log(`light blue path ${i} is ${logo[i].getTotalLength()}`);
+// }

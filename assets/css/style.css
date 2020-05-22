@@ -71,8 +71,8 @@ input[type="submit"] {
 	left: 3vw;
 }
 section {
-	min-height: calc(100vh - 3vw);
-	height: auto;
+	height: calc(100vh - 6vw);
+	/* height: auto; */
 	width: 94vw;
 	margin: auto;
 	/* background-size: cover !important; */
@@ -169,7 +169,7 @@ section.show .inner {
 	background-attachment: fixed;
 }
 #about .description {
-	margin: 15px;
+	margin: 15px 0;
 }
 
 .wrapper section#portfolio {
@@ -185,9 +185,13 @@ section.show .inner {
 	left: 6vw;
 	top: 5vw;
 }
-.logo {
+/* .logo {
 	width: 8vw;
 	min-width: 120px;
+} */
+#logo-anim {
+	width: 7.2vw !important;
+	min-width: 100px;
 }
 
 .right {
@@ -588,6 +592,7 @@ nav ul li a {
 #logo-anim path:nth-child(1) {
 	stroke-dasharray: 54.8;
 	stroke-dashoffset: 54.8;
+
 	animation: line-anim 2s ease forwards, light-fill 1s ease forwards 3.3s;
 }
 #logo-anim path:nth-child(2) {
@@ -612,17 +617,27 @@ nav ul li a {
 	animation: line-anim 2s ease forwards 1.1s, dark-fill 1s ease forwards 3.3s;
 }
 #logo-anim .letter {
+	fill: var(--sectionColor);
 	fill-opacity: 0;
 	animation: letters-anim 2s ease forwards 1.3s;
+	transition: all 0.3s ease-in-out;
 }
 #logo-anim .light-blue {
-	fill: #00b4ff;
+	fill: var(--sectionColor);
 	fill-opacity: 0;
 }
 #logo-anim .dark-blue {
-	fill: #0087c4;
+	fill: var(--sectionColor);
 	fill-opacity: 0;
 	animation: dark-fill 1s ease forwards 1.5s;
+}
+
+#logo-anim path.light-blue,
+#logo-anim path.dark-blue {
+	/* fill: var(--sectionColor) !important; */
+	/* stroke: var(--sectinoColor); */
+	stroke: var(--sectionColor);
+	transition: all 0.3s ease-in-out;
 }
 @keyframes line-anim {
 	to {
@@ -643,7 +658,7 @@ nav ul li a {
 }
 @keyframes dark-fill {
 	to {
-		fill-opacity: 1;
+		fill-opacity: 0.6;
 	}
 }
 /****** SWIPER JS *******/
