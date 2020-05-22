@@ -100,6 +100,7 @@
 			</section>
 
 			<section class="section2" id="about" slide="2">
+			<div class="overlay"></div>
                 
                 <div class="inner">
                     <p>What we do</p>
@@ -115,6 +116,7 @@
                 </div>
             </section>
 			<section class="section3" id="portfolio" slide="3">
+			<div class="overlay"></div>
                 <div class="inner">
                 <p>Some of our work</p>
 				<hr>
@@ -140,6 +142,7 @@
             </div>
 		</section>
 		<section class="section4" id="contact" slide="4">
+		<div class="overlay"></div>
 			<div class="inner">
 				<?php include 'includes/form.php' ?>
 			</div>
@@ -162,12 +165,16 @@
       centeredSlides: true,
       slidesPerView: 'auto',
 	  initialSlide: 2,
+	  loop: true,
+	  loopedSlides: 1,
 	
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
+		// loopedSlides: 6,
+		
         slideShadows : true,
       },
       pagination: {
