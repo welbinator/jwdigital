@@ -5,9 +5,7 @@ body {
 }
 
 #home {
-	/* height: 100vh; */
 	overflow: hidden;
-	position: relative;
 }
 
 #home .my-slide {
@@ -42,7 +40,7 @@ body {
 	flex-grow: 1;
 }
 #home .caption {
-	width: 80%;
+	/* width: 80%; */
 	margin: auto;
 }
 #home .caption h1 {

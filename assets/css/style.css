@@ -15,6 +15,7 @@ body {
 	font-size: 62.5%;
 	font-weight: 600;
 	color: white;
+	background: black;
 }
 :root {
 	--sectionColor: #00abf3;
@@ -72,11 +73,7 @@ input[type="submit"] {
 }
 section {
 	height: calc(100vh - 6vw);
-	/* height: auto; */
 	width: 94vw;
-	margin: auto;
-	/* background-size: cover !important; */
-	padding: 8vw;
 	position: relative;
 	background: black;
 }
@@ -94,7 +91,9 @@ section {
 section .inner {
 	opacity: 0;
 	transition: all 1s ease;
-	width: 64vw;
+	/* width: 64vw; */
+	width: 88vw;
+	max-width: 1300px;
 	z-index: 0;
 	position: absolute;
 	top: 50%;
@@ -106,7 +105,7 @@ section.show .inner {
 	opacity: 1;
 }
 section:last-child {
-	margin-bottom: 3vw !important;
+	margin-bottom: 15vw !important;
 }
 #intro {
 	background: black;
@@ -117,10 +116,7 @@ section:last-child {
 #portfolio {
 	padding: 0;
 }
-#portfolio .inner {
-	width: 69vw;
-	/* padding-top: 20vh; */
-}
+
 #portfolio .overlay {
 	opacity: 0.7;
 }
@@ -483,7 +479,7 @@ svg.next-arrow.flip {
 div#next-container {
 	border: 2px solid white;
 	position: fixed;
-	bottom: calc(6vw - 10px);
+	bottom: 6vw;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 9;
