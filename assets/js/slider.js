@@ -16,8 +16,8 @@ next.addEventListener("click", function () {
 	resetTimer();
 });
 
-// create circle indicators
 export function circleIndicator() {
+	// create circle indicators
 	for (let i = 0; i < slides.length; i++) {
 		const div = document.createElement("div");
 		div.innerHTML = i + 1;

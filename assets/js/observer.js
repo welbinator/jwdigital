@@ -71,6 +71,10 @@ sections.forEach((section) => {
 	observer.observe(section);
 });
 
+//////////////////////////////
+// next section button
+/////////////////////////////
+
 export const home = document.querySelector("#home").getAttribute("id");
 export const nextButton = document.querySelector("#next-container");
 

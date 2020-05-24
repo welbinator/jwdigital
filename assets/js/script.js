@@ -1,7 +1,6 @@
 import * as slider from "./slider.js";
 import * as obs from "./observer.js";
 import * as nav from "./shownav.js";
-// import * as next from "./nextSlide.js";
 
 /////////////////////////////////////////////////////////////////////
 ///////// slider.js
@@ -31,9 +30,8 @@ obs.sections.forEach((section) => {
 	obs.observer.observe(section);
 });
 
-// adds class section1, section2 etc to each section
-
 function addClassesToSections() {
+	// adds class section1, section2 etc to each section
 	const sectionsCount = document.querySelectorAll("section");
 	let sectionsIteration = 1;
 	sectionsCount.forEach((section) => {
@@ -75,11 +73,10 @@ cards.forEach((card) => {
 	});
 });
 
-// rotate icons on hover
-
 const icons = document.querySelectorAll(".icon");
 
 icons.forEach((icon) => {
+	// rotate icons on hover
 	icon.addEventListener("mouseover", function () {
 		icon.classList.add("spin");
 	});
