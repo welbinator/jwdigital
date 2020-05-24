@@ -27,10 +27,16 @@ function ctaCheck(entries) {
 		if (!entry.isIntersecting) {
 			entry.target.classList.remove("show");
 		} else if (entry.isIntersecting) {
-			const section1color = "#01A1E5";
-			const section2color = "#f78259";
-			const section3color = "#eb4559";
-			const section4color = "#FFBC42";
+			// const section1color = "#01A1E5";
+			// const section2color = "#f78259";
+			// const section3color = "#eb4559";
+			// const section4color = "#FFBC42";
+
+			const section1color = "#2364AA";
+			const section2color = "#3DA5D9";
+			const section3color = "#73BFB8";
+			const section4color = "#FEC601";
+			const section5color = "#EA7317";
 
 			const sections = document.querySelectorAll("section");
 

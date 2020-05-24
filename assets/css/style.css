@@ -346,6 +346,7 @@ nav.show-nav {
 	transform: translateX(0);
 	opacity: 1;
 	pointer-events: auto;
+	z-index: 3;
 }
 
 nav ul {
