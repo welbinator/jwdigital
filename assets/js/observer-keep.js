@@ -1,12 +1,12 @@
-export const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
-export const options = {
+const options = {
 	threshold: 0.7,
 };
 
 window.addEventListener("resize", setThreshold);
 
-export function setThreshold() {
+function setThreshold() {
 	if (window.innerWidth > 768) {
 		options.threshold = 0.7;
 		console.log(options.threshold);
@@ -16,11 +16,11 @@ export function setThreshold() {
 	}
 }
 
-export let slide;
+let slide;
 
-export const observer = new IntersectionObserver(ctaCheck, options);
+const observer = new IntersectionObserver(ctaCheck, options);
 
-export function ctaCheck(entries) {
+function ctaCheck(entries) {
 	entries.forEach((entry) => {
 		const currentSlide = entry.target.getAttribute("id");
 
@@ -70,29 +70,3 @@ export function ctaCheck(entries) {
 sections.forEach((section) => {
 	observer.observe(section);
 });
-
-//////////////////////////////
-// next section button
-/////////////////////////////
-
-export const home = document.querySelector("#home").getAttribute("id");
-export const nextButton = document.querySelector("#next-container");
-
-let nextSection;
-let nextSectionId;
-
-nextButton.addEventListener("click", jump);
-export function jump(s) {
-	slide = parseInt(slide, 10);
-	nextSection = slide + 1;
-	nextSection = document.querySelector(".section" + nextSection);
-
-	if (slide == sections.length) {
-		window.scrollTo(0, home);
-	} else {
-		nextSectionId = nextSection.getAttribute("id");
-		const nextSlide = document.getElementById(nextSectionId).offsetTop;
-
-		window.scrollTo(0, nextSlide);
-	}
-}
