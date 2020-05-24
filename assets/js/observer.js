@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll("section");
 
 const options = {
-	threshold: 0.3,
+	threshold: 0.7,
 };
 
 window.addEventListener("resize", setThreshold);

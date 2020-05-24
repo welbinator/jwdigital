@@ -3,144 +3,104 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JW Digital</title>
-        
-		<link rel="stylesheet" href="assets/css/form.css">
-		<link rel="stylesheet" href="assets/css/slider.css" />
-		<link rel="stylesheet" href="assets/css/swiper.min.css">
-		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Document</title>
 	</head>
 	<body>
-		<div class="border"></div>
-		<div id="next-container"><?php include "includes/next-arrow.php" ?></div>
-		<nav class="nav fix">
-			<ul class="nav__list">
-				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-				<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-				<li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-				<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="left abs">
-			<div class="logo abs"><a href="#home"><?php include "includes/logo.php" ?></a>
+		<style>
+			.loan-table .row {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				color: #134a86;
+			}
+			.loan-table .row:nth-child(3),
+			.loan-table .row:nth-child(5),
+			.loan-table .row:nth-child(7) {
+				background: #e8e8e8;
+			}
+			.loan-table .row .column {
+				border: 1px solid #134a86;
+				flex: 1;
+				padding: 10px 0 10px 10px;
+			}
+			.loan-table .heading {
+				background: #134a86;
+				color: white;
+				padding: 5px 10px;
+				text-align: center;
+				font-weight: bold;
+			}
+			.loan-table .heading span {
+				color: #eb6f24;
+			}
+			.loan-table .attention {
+				background: #eb6f24;
+				color: white;
+				padding: 5px 10px;
+				text-align: center;
+			}
+			.loan-table .disclaimer {
+				padding: 20px;
+				border: 1px solid #134a86;
+			}
+		</style>
+		<div class="loan-table">
+			<div class="heading">
+				Linn Area Credit Union Personal Loan <span>vs</span> High-interest
+				Credit Card
+			</div>
+			<div class="row">
+				<div class="column"></div>
+				<div class="column"><b>Personal Loan</b></div>
+				<div class="column"><b>Credit Card</b></div>
+			</div>
+			<div class="row">
+				<div class="column">Loan Amount/Card Balance</div>
+				<div class="column">$20,000.00</div>
+				<div class="column">$20,000.00</div>
+			</div>
+			<div class="row">
+				<div class="column">Monthly Payment</div>
+				<div class="column">$405.57</div>
+				<div class="column">$496.94</div>
+			</div>
+			<div class="row">
+				<div class="column">Interest Rate (APR)</div>
+				<div class="column">7.90%</div>
+				<div class="column">16.99%</div>
+			</div>
+			<div class="row">
+				<div class="column">Origination Fee</div>
+				<div class="column">$0</div>
+				<div class="column">N/A</div>
+			</div>
+			<div class="row">
+				<div class="column">Loan Term/Time to Pay Off</div>
+				<div class="column">60 months (5 years)</div>
+				<div class="column">60 months (5 years)</div>
+			</div>
+			<div class="row">
+				<div class="column">Finance Charge</div>
+				<div class="column">$4,274.32</div>
+				<div class="column">$9,816.78</div>
+			</div>
+			<div class="attention">
+				You'll pay <b>$5,542.46 LESS</b> with a personal loan from Linn Area
+				Credit Union!
+			</div>
+			<div class="disclaimer">
+				Credit card example above assumes a $20,000 balance making a monthly
+				payment of $496.94 at 16.99% APR as calculated using the Linn Area
+				Credit Union loan calculator versus a Linn Area Credit Union personal
+				loan of $20,000 and making a monthly payment of $404.57 based on a 7.90%
+				APR for 60 months. Actual savings may vary based on the actual APR of
+				existing credit card(s) and the APR of a personal loan you may obtain
+				through Linn Area Credit Union. The interest represented assumes full
+				payments each month for the entire term of the loan. Linn Area Credit
+				Union personal loans have no pre-payment penalty, so the loan can be
+				repaid at any time by making a full payment of the remaining balance and
+				incurred interest at the time of payoff.
 			</div>
 		</div>
-		<div class="right abs">
-			<div class="controls-container abs">
-				<div class="controls-item" onclick="showNav()">
-					<div class="menu-icon">
-						<div class="line-container straight"></div>
-						<div class="line-container straight"></div>
-						<div class="line-container straight"></div>
-						<div class="line-container x one"></div>
-						<div class="line-container x two"></div>
-					</div>
-				</div>
-				<div class="controls-item">
-					<a href="https://www.facebook.com/cedarrapidswebdesign/" target="_blank"><?php include "includes/fb-icon.php" ?></a>
-				</div>
-				<div class="controls-item">
-					<a href="https://www.linkedin.com/in/jameswelbes/" target="_blank"><?php include "includes/linkedin-icon.php" ?></a>
-				</div>
-				<div class="controls-item">
-					<a href="#contact"><?php include "includes/email-icon.php" ?></a>
-				</div>
-			</div>
-		</div>
-		<div class="wrapper">
-			<section class="section1" id="home" slide="1">
-                <div class="overlay"></div>
-				<div class="inner">
-				<div class="my-slider">
-						<div class="my-slide active">
-							<div class="container">
-								<div class="caption">
-									<p>It's business time</p cl>
-
-                                        <hr>
-            
-                                        <h3>Let's turn your idea into money</h3>
-                                        <div class="cta-container"><a class="cta" href="/#contact">Get Started</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="my-slide">
-							<div class="container">
-								<div class="caption">
-									<p>Be unique</p>
-
-									<hr>
-
-									<h3>How do you plan to differentiate yourself?</h3>
-									<div class="cta-container"><a class="cta" href="/#contact">Get Started</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="my-slide">
-							<div class="container">
-								<div class="caption">
-										<p>Find your customers</p class="rellax" data-rellax-speed="-1">
-
-                                        <hr>
-            
-                                        <h3>Need help identifying your target market?</h3>
-										<div class="cta-container"><a class="cta" href="/#contact">Get Started</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="controls">
-						<div class="prev"><</div>
-						<div class="next">></div>
-					</div>
-
-					<div class="indicator"></div>
-				</div>
-			</section>
-
-			<section class="section2" id="about" slide="2">
-                
-                <div class="inner">
-                    <p>What we do</p cl>
-
-                        <hr>
-
-						<h3>JW Digital specializes in responsive, effective websites</h3>
-						
-						<p class="description">Our goals are your goals. Whether you're looking for more leads, exposure, an eCommerce platform, or just an informational hub for your clients and/or employees, we can help.</p>
-						<p class="description">All of our websites are mobile responsive, load fast, and utilize best on-page SEO practices so customers can find your business.</p>
-						
-                        <div class="cta-container"><a class="cta" href="/#portfolio">Examples</a></div>
-                </div>
-            </section>
-			<section class="section3" id="portfolio" slide="3">
-				<!-- <div class="inner">
-				
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url(/assets/images/finnprep.png)"></div>
-
-						</div>
-					
-					<div class="swiper-pagination"></div>
-					</div>
-				</div> -->
-			<!-- </div> -->
-			</section>
-		<section class="section4" id="contact" slide="4">
-			<div class="inner">
-				<?php include 'includes/form.php' ?>
-			</div>
-		</section>
-		</div>
-		<!-- wrapper -->
-
-
-      
-		<script type="text/javascript" src="assets/js/slider.js"></script>
-		<script type="text/javascript" src="assets/js/observer.js"></script>
-		<!-- <script type="text/javascript" src="assets/js/swiper.min.js"></script> -->
-		<script type="text/javascript" src="assets/js/script.js"></script>
 	</body>
 </html>
