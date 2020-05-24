@@ -137,6 +137,16 @@ section:last-child {
 	border-color: var(--sectionColor);
 	color: white;
 }
+.gradient {
+	position: fixed;
+	top: 3vw;
+	background-image: linear-gradient(black, black, transparent);
+	width: 94vw;
+	height: 25vh;
+	z-index: 1;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 .overlay {
 	background: black;
@@ -170,7 +180,7 @@ section:last-child {
 	position: fixed;
 	width: 11vw;
 	min-width: 150px;
-	z-index: 1;
+	z-index: 2;
 	left: 6vw;
 	top: 5vw;
 }
@@ -187,7 +197,7 @@ section:last-child {
 	position: fixed;
 	top: 6vw;
 	right: 6vw;
-	z-index: 1;
+	z-index: 2;
 }
 
 .right .controls-container {

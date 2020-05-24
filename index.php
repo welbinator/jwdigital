@@ -22,9 +22,12 @@
 			</ul>
 		</nav>
 		<div class="left abs">
-			<div class="logo abs"><a href="#home"><?php include "includes/logo-anim.php" ?></a>
+			<div class="logo abs">
+				<a href="#home"><?php include "includes/logo-anim.php" ?></a>
 			</div>
+
 		</div>
+
 		<div class="right abs">
 			<div class="controls-container abs">
 				<div class="controls-item" onclick="showNav()">
@@ -47,6 +50,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="gradient"></div>
 		<div class="wrapper">
 			
 			<section id="home" slide="1">
