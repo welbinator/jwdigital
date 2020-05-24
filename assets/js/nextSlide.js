@@ -2,11 +2,11 @@ import { sections } from "./observer.js";
 export const home = document.querySelector("#home").getAttribute("id");
 export const nextButton = document.querySelector("#next-container");
 
-let nextSection;
-let nextSectionId;
-let currentSlide;
-
 export function jump(s) {
+	let nextSection;
+	let nextSectionId;
+	let currentSlide;
+
 	currentSlide = parseInt(currentSlide, 10);
 	nextSection = currentSlide + 1;
 	nextSection = document.querySelector(".section" + nextSection);
