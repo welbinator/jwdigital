@@ -197,7 +197,7 @@ section:last-child {
 	position: fixed;
 	top: 6vw;
 	right: 6vw;
-	z-index: 2;
+	z-index: 3;
 }
 
 .right .controls-container {

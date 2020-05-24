@@ -1,12 +1,12 @@
-const sections = document.querySelectorAll("section");
+export const sections = document.querySelectorAll("section");
 
-const options = {
+export const options = {
 	threshold: 0.7,
 };
 
 window.addEventListener("resize", setThreshold);
 
-function setThreshold() {
+export function setThreshold() {
 	if (window.innerWidth > 768) {
 		options.threshold = 0.7;
 		console.log(options.threshold);
@@ -16,11 +16,11 @@ function setThreshold() {
 	}
 }
 
-let slide;
+export let slide;
 
-const observer = new IntersectionObserver(ctaCheck, options);
+export const observer = new IntersectionObserver(ctaCheck, options);
 
-function ctaCheck(entries) {
+export function ctaCheck(entries) {
 	entries.forEach((entry) => {
 		const currentSlide = entry.target.getAttribute("id");
 

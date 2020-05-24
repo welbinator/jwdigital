@@ -1,3 +1,31 @@
+import * as slider from "./slider.js";
+import * as obs from "./observer.js";
+import * as nav from "./shownav.js";
+import * as next from "./nextSlide.js";
+
+// slider.js
+
+slider.prev.addEventListener("click", function () {
+	prevSlide();
+	updateCircleIndicator();
+	resetTimer();
+});
+
+slider.next.addEventListener("click", function () {
+	nextSlide();
+	updateCircleIndicator();
+	resetTimer();
+});
+
+slider.circleIndicator();
+
+// observer.js
+window.addEventListener("resize", obs.setThreshold);
+
+obs.sections.forEach((section) => {
+	obs.observer.observe(section);
+});
+
 // adds class section1, section2 etc to each section
 
 function addClassesToSections() {
@@ -12,20 +40,10 @@ function addClassesToSections() {
 }
 addClassesToSections();
 
-//shows nav when you click on hamburger icon
+//showNav
 
-function showNav() {
-	//   const navbars = document.querySelectorAll('.line-container');
-	const menuIcon = document.querySelector(".menu-icon");
-	document.querySelector("nav").classList.toggle("show-nav");
-
-	menuIcon.classList.toggle("nav-open");
-}
-
-const navLinks = document.querySelectorAll("nav ul li");
-
-navLinks.forEach((link) => {
-	link.addEventListener("click", showNav);
+nav.navLinks.forEach((link) => {
+	link.addEventListener("click", nav.showNav);
 });
 
 // cards hover
@@ -62,29 +80,11 @@ icons.forEach((icon) => {
 });
 
 // next section button
-
-const home = document.querySelector("#home").getAttribute("id");
-const nextButton = document.querySelector("#next-container");
-// let currentSection;
-// let currentSectionId;
-let nextSection;
+// let nextSection;
 let nextSectionId;
+// let currentSlide;
 
-nextButton.addEventListener("click", jump);
-function jump(s) {
-	slide = parseInt(slide, 10);
-	nextSection = slide + 1;
-	nextSection = document.querySelector(".section" + nextSection);
-
-	if (slide == sections.length) {
-		window.scrollTo(0, home);
-	} else {
-		nextSectionId = nextSection.getAttribute("id");
-		const nextSlide = document.getElementById(nextSectionId).offsetTop;
-
-		window.scrollTo(0, nextSlide);
-	}
-}
+next.nextButton.addEventListener("click", next.jump);
 
 // team section
 
