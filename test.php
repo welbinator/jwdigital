@@ -169,8 +169,7 @@
 
 
       
-		<!-- <script type="text/javascript" src="assets/js/slider.js"></script> -->
-		<!-- <script type="text/javascript" src="assets/js/observer.js"></script> -->
+		
 		<script type="text/javascript" src="assets/js/swiper.min.js"></script>
 		<script type="module" src="assets/js/script.js"></script>
 
