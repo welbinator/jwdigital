@@ -70,3 +70,25 @@ export function ctaCheck(entries) {
 sections.forEach((section) => {
 	observer.observe(section);
 });
+
+export const home = document.querySelector("#home").getAttribute("id");
+export const nextButton = document.querySelector("#next-container");
+
+let nextSection;
+let nextSectionId;
+
+nextButton.addEventListener("click", jump);
+export function jump(s) {
+	slide = parseInt(slide, 10);
+	nextSection = slide + 1;
+	nextSection = document.querySelector(".section" + nextSection);
+
+	if (slide == sections.length) {
+		window.scrollTo(0, home);
+	} else {
+		nextSectionId = nextSection.getAttribute("id");
+		const nextSlide = document.getElementById(nextSectionId).offsetTop;
+
+		window.scrollTo(0, nextSlide);
+	}
+}
