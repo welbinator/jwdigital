@@ -30,7 +30,7 @@
 
 		<div class="right abs">
 			<div class="controls-container abs">
-				<div class="controls-item" onclick="showNav()">
+				<div class="controls-item" id="navClick">
 					<div class="menu-icon">
 						<div class="line-container straight"></div>
 						<div class="line-container straight"></div>
@@ -169,10 +169,10 @@
 
 
       
-		<script type="text/javascript" src="assets/js/slider.js"></script>
-		<script type="text/javascript" src="assets/js/observer.js"></script>
+		<!-- <script type="text/javascript" src="assets/js/slider.js"></script>
+		<script type="text/javascript" src="assets/js/observer.js"></script> -->
 		<script type="text/javascript" src="assets/js/swiper.min.js"></script>
-		<script type="text/javascript" src="assets/js/script.js"></script>
+		<script type="module" src="assets/js/script.js"></script>
 
 		<script>
     var swiper = new Swiper('.swiper-container', {
