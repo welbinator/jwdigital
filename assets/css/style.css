@@ -334,7 +334,7 @@ nav {
 	max-width: 700px;
 	right: 3vw;
 	top: 3vw;
-	z-index: 1;
+	z-index: 3;
 	pointer-events: none;
 	position: fixed;
 	transition: all 08;
@@ -346,7 +346,6 @@ nav.show-nav {
 	transform: translateX(0);
 	opacity: 1;
 	pointer-events: auto;
-	z-index: 3;
 }
 
 nav ul {
