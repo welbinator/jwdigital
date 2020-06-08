@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="assets/css/slider.css" />
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
 	<link rel="stylesheet" href="assets/css/style.css" />
+
+	<script src="https://kit.fontawesome.com/b6c33c7af2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -159,7 +161,75 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact" slide="4">
+		<section id="team" slide="4">
+			<div class="overlay"></div>
+			<div class="inner">
+				<p>Meet our Team</p>
+				<hr style="width: 174px;">
+				<h3>Cool people doin' cool stuff</h3>
+				<div class="team-inner">
+
+
+
+					<div class="team-member-wrapper">
+						<div class="james infocardContainer">
+							<div class="teamMain">
+								<img src="./assets/images/james.jpg"></img>
+							</div>
+							<div class="textbois">
+								<h2>James Welbes</h2>
+								<h4>Owner & Web Developer</h4>
+
+
+							</div>
+							<div class="hotlinks">
+								<a href="https://codepen.io/LIMESTA"><img class="hotlink" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+								</a>
+								<a href="https://codepen.io/LIMESTA">
+									<img class="hotlink" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+								</a>
+								<a href="https://codepen.io/LIMESTA">
+									<img class="hotlink" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png" target="_blank"></img>
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+					<div class="team-member-wrapper">
+						<div class="devin infocardContainer">
+							<div class="teamMain">
+								<img src="./assets/images/devingreen.png"></img>
+							</div>
+							<div class="textbois">
+								<h2>Devin Green</h2>
+								<h4>Graphic & Web Designer</h4>
+								<a href="https://devingreen.me">View Devin's Website</a>
+
+							</div>
+							<div class="hotlinks">
+								<a href="https://www.facebook.com/artistro08">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a href="https://twitter.com/artistro08">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://www.instagram.com/artistro08/">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a href="https://dribbble.com/artistro08">
+									<i class="fab fa-dribbble"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/artistro08/">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+		</section>
+		<section id="contact" slide="5">
 			<div class="overlay"></div>
 			<div class="inner">
 				<?php include 'includes/form.php' ?>

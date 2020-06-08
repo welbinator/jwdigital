@@ -10,12 +10,21 @@
     font-weight: 300;
   }
 
-  h2 {
+  .textbois h2 {
     font-weight: 600;
     font-style: italic;
     font-family: "Fira Sans Condensed", sans-serif;
   }
 
+  .team-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .team-member-wrapper {
+    min-width: 500px;
+  }
 
   .infocardContainer {
     display: flex;
@@ -37,7 +46,7 @@
     transition: all 1s ease-out;
   }
 
-  .infocardContainer div {
+  .ifocardContainer div {
     color: white;
     flex-shrink: 1;
     width: 100%;
@@ -116,83 +125,113 @@
 
 <section class="section5" id="team">
   <div class="team-inner">
-    <div class="infocardContainer">
-      <div id="main">
-        <img src="./assets/images/devingreen.png"></img>
-      </div>
-      <div id="textbois">
-        <h2>Devin Green</h2>
-        <h4>Graphic & Web Designer</h4>
-        <a href="https://devingreen.me">Website</a>
-        <div id="hotlinks">
-          <a href="https://codepen.io/LIMESTA"><img id="codepenio"
-              src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
-              target="_blank"></img>
-          </a>
-          <a href="https://codepen.io/LIMESTA">
-            <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
-              target="_blank"></img>
-          </a>
-          <a href="https://codepen.io/LIMESTA">
-            <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
-              target="_blank"></img>
-          </a>
+
+    <div class="team-member-wrapper">
+      <div class="devin infocardContainer">
+        <div id="main">
+          <img src="./assets/images/devingreen.png"></img>
+        </div>
+        <div id="textbois">
+          <h2>Devin Green</h2>
+          <h4>Graphic & Web Designer</h4>
+          <a href="https://devingreen.me">Website</a>
+          <div id="hotlinks">
+            <a href="https://codepen.io/LIMESTA"><img id="codepenio"
+                src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
+                target="_blank"></img>
+            </a>
+            <a href="https://codepen.io/LIMESTA">
+              <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
+                target="_blank"></img>
+            </a>
+            <a href="https://codepen.io/LIMESTA">
+              <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
+                target="_blank"></img>
+            </a>
+          </div>
         </div>
       </div>
-
 
     </div>
 
-
-    <div class="infocardContainer">
-      <div id="main">
-        <img src="./assets/images/devingreen.png"></img>
-      </div>
-      <div id="textbois">
-        <h2>Devin Green</h2>
-        <h4>Graphic & Web Designer</h4>
-        <a href="https://devingreen.me">Website</a>
-        <div id="hotlinks">
-          <a href="https://codepen.io/LIMESTA"><img id="codepenio"
-              src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
-              target="_blank"></img>
-          </a>
-          <a href="https://codepen.io/LIMESTA">
-            <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
-              target="_blank"></img>
-          </a>
-          <a href="https://codepen.io/LIMESTA">
-            <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
-              target="_blank"></img>
-          </a>
+    <div class="team-member-wrapper">
+      <div class="james infocardContainer">
+        <div id="main">
+          <img src="./assets/images/james.jpg"></img>
         </div>
+        <div id="textbois">
+          <h2>James Welbes</h2>
+          <h4>Owner & Web Developer</h4>
+          <a href="https://jameswelbes.com">Website</a>
+          <div id="hotlinks">
+            <a href="https://codepen.io/LIMESTA"><img id="codepenio"
+                src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
+                target="_blank"></img>
+            </a>
+            <a href="https://codepen.io/LIMESTA">
+              <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
+                target="_blank"></img>
+            </a>
+            <a href="https://codepen.io/LIMESTA">
+              <img id="codepenio" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png"
+                target="_blank"></img>
+            </a>
+          </div>
+        </div>
+
+
       </div>
-
-
     </div>
   </div>
 </section>
 
 <script>
 
-  function onHover() {
-    const infocard = document.querySelector(".infocardContainer");
-    const infocardDivs = document.querySelectorAll(".infocardContainer div");
+  function onHoverDevin() {
+    const infocard = document.querySelector(".devin.infocardContainer");
+    const infocardDivs = document.querySelectorAll(".devin.infocardContainer div");
 
-    infocard.addEventListener("mouseover", function () {
+    infocard.addEventListener("mouseover", () => {
       infocard.classList.add("active");
       infocardDivs.forEach((card) => {
         card.classList.add("active");
       });
     });
 
-    infocard.addEventListener("mouseout", function () {
+    infocard.addEventListener("mouseout", () => {
       infocard.classList.remove("active");
       infocardDivs.forEach((card) => {
         card.classList.remove("active");
       })
     });
+
   };
 
-  onHover();
+  onHoverDevin();
+
+
+  function onHoverJames() {
+    const infocard = document.querySelector(".james.infocardContainer");
+    const infocardDivs = document.querySelectorAll(".james.infocardContainer div");
+
+    infocard.addEventListener("mouseover", () => {
+      infocard.classList.add("active");
+      infocardDivs.forEach((card) => {
+        card.classList.add("active");
+      });
+    });
+
+    infocard.addEventListener("mouseout", () => {
+      infocard.classList.remove("active");
+      infocardDivs.forEach((card) => {
+        card.classList.remove("active");
+      })
+    });
+
+  };
+
+  onHoverJames();
+
+
+
 </script>

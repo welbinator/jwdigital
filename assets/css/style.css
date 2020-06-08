@@ -141,8 +141,8 @@ section:last-child {
 	position: fixed;
 	top: 3vw;
 	background-image: linear-gradient(black, black, transparent);
-	width: 92vw;
-	height: 25vh;
+	width: 90vw;
+	height: 17vh;
 	z-index: 1;
 	left: 50%;
 	transform: translateX(-50%);
@@ -498,113 +498,147 @@ div#next-container {
 }
 
 /*  TEAM   */
-#team {
-	display: flex;
-}
-#team .inner {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	padding: 20vh 0;
-	width: 84vw;
-}
-.cardContainer * {
-	font-weight: 300;
-}
 
-.cardContainer {
-	display: flex;
-	height: 180px;
-	width: 180px;
-	max-width: 100%;
-	border-radius: 100px;
-	margin: 20px;
-	background: linear-gradient(
-		121deg,
-		rgba(255, 255, 255, 0) 13%,
-		var(--sectionColor)
-	);
-	transition: all 500ms ease-in;
-}
-.cardContainer h2 {
-	font-weight: bold;
-}
-.cardContainer h4 {
-	font-size: 18px;
-}
-.cardContainer.active {
+.infocardContainer * {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 300;
+  }
+
+  .textbois a {
+	  font-size: 1.5em;
+  }
+  .textbois h2 {
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  .textbois h4 {
+	  font-size: 1.6em;
+  }
+
+  .team-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .team-member-wrapper {
+    min-width: 500px;
+  }
+
+  .infocardContainer {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    /* background: rgb(0, 159, 255);
+	background: linear-gradient(121deg, rgba(255, 255, 255, 0) 13%, rgba(0, 159, 255, 1) 100%); */
+	background: var(--sectionColor);
+	background: linear-gradient(121deg, rgba(255, 255, 255, 0) 13%, var(--sectionColor));
+    transition: all 500ms ease-in;
+    /* transition-delay: 1s; */
+    margin: auto;
+    margin-top: 100px;
+	--margin-top: 100px;
+	position: relative;
+  }
+
+  .infocardContainer.active {
 	width: 500px;
-	border-radius: 100px 10px 100px 100px;
+	max-width: 85vw;
+    border-radius: 100px 10px 100px 100px;
 	transition: all 1s ease-out;
-}
-.cardContainer div {
-	color: white;
-	flex-shrink: 1;
-	width: 100%;
-}
-.cardContainer div * {
-	display: flex;
+	
+  }
 
-	overflow: hidden;
-	text-overflow: hidden;
+  .ifocardContainer div {
+    color: white;
+    flex-shrink: 1;
+    width: 100%;
 
-	color: white;
-	white-space: nowrap;
-	width: 0;
-	height: auto;
-	transition: all 450ms ease-in;
-}
+  }
 
-.cardContainer div.active * {
-	display: flex;
-	visibility: visible;
-	transition: all 1s ease-out;
-	width: 100%;
-	height: auto;
-}
+  .infocardContainer div * {
+    display: flex;
 
-.cardContainer #main,
-.cardContainer #main img {
-	--background-color: red;
-	height: 180px;
-	width: 180px;
-	padding-right: 10px;
-	border-radius: 100%;
-	flex-shrink: 0;
-	object-fit: cover;
-}
-.cardContainer #main img {
-	height: 180px;
-	width: 180px;
-	transition: none;
-	display: float;
+    overflow: hidden;
+    text-overflow: hidden;
+
+    color: white;
+    white-space: nowrap;
+    width: 0;
+    height: auto;
+    transition: all 450ms ease-in;
+    /* transition-delay: 1s; */
+  }
+
+
+  .infocardContainer div.active * {
+    display: flex;
+    visibility: visible;
+    transition: all 1s ease-out;
+    /* transition-delay: 50ms; */
+    width: 100%;
+    height: auto;
+  }
+
+  .infocardContainer .teamMain,
+  .infocardContainer .teamMain img {
+    --background-color: red;
+    height: 200px;
+    width: 200px;
+    padding-right: 10px;
+    border-radius: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  .infocardContainer .teamMain img {
+    height: 200px;
+    width: 200px;
+    transition: none;
+    display: float;
+    position: relative;
+    border: 10px solid white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  .infocardContainer .textbois {
 	position: relative;
-	border: 10px solid white;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-}
-.cardContainer #textbois {
-	position: relative;
-	padding: 20px;
-}
-.cardContainer #textbois #hotlinks {
-	max-width: 60%;
-	max-height: 30px;
-
-	--background-color: white;
-	position: absolute;
-	bottom: 15px;
 	display: flex;
-	justify-content: space-between;
-	border-radius: 13px;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100px;
+  }
+
+.textbois, .hotlinks {
+	margin-left: 15px;
 }
-.cardContainer #textbois #hotlinks * {
-	background-color: white;
-	max-width: 30px;
-	--margin: 0 1px 0 1px;
-	border-radius: 25px;
+  .hotlinks {
+   
+	width: 140px;
+    max-height: 30px;
+    --background-color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13px;
 }
+
+
+
+  .hotlinks * {
+    /* background-color: white; */
+    max-width: 30px;
+    --margin: 0 1px 0 1px;
+   
+  }
+  .hotlinks i {
+	  color: white;
+  }
 /****** LOGO ANIMATION *****/
 #logo-anim path:nth-child(1) {
 	stroke-dasharray: 54.8;

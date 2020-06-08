@@ -87,46 +87,47 @@ icons.forEach((icon) => {
 
 // team section
 
-// function onHover() {
-//   const devinCard = document.querySelector('#devin');
-//   const devinCardDivs = document.querySelectorAll('#devin div');
+function onHoverDevin() {
+	const infocard = document.querySelector(".devin.infocardContainer");
+	const infocardDivs = document.querySelectorAll(".devin.infocardContainer div");
 
-//   const jamesCard = document.querySelector('#james');
-//   const jamesCardDivs = document.querySelectorAll('#james div');
+	infocard.addEventListener("mouseover", () => {
+		infocard.classList.add("active");
+		infocardDivs.forEach((card) => {
+			card.classList.add("active");
+		});
+	});
 
-//   devinCard.addEventListener('mouseover', function() {
-//     devinCard.classList.add('active');
-//     devinCardDivs.forEach((card) => {
-//       card.classList.add('active');
-//     });
-//   });
+	infocard.addEventListener("mouseout", () => {
+		infocard.classList.remove("active");
+		infocardDivs.forEach((card) => {
+			card.classList.remove("active");
+		})
+	});
 
-//   devinCard.addEventListener('mouseout', function() {
-//     devinCard.classList.remove('active');
-//     devinCardDivs.forEach((card) => {
-//       card.classList.remove('active');
-//     });
-//   });
+};
 
-//   jamesCard.addEventListener('mouseover', function() {
-//     jamesCard.classList.add('active');
-//     jamesCardDivs.forEach((card) => {
-//       card.classList.add('active');
-//     });
-//   });
+onHoverDevin();
 
-//   jamesCard.addEventListener('mouseout', function() {
-//     jamesCard.classList.remove('active');
-//     jamesCardDivs.forEach((card) => {
-//       card.classList.remove('active');
-//     });
-//   });
-// }
 
-// onHover();
+function onHoverJames() {
+	const infocard = document.querySelector(".james.infocardContainer");
+	const infocardDivs = document.querySelectorAll(".james.infocardContainer div");
 
-// find stroke length of paths in SVG
-// const logo = document.querySelectorAll("#logo-anim path");
-// for (let i = 0; i < logo.length; i++) {
-// 	console.log(`light blue path ${i} is ${logo[i].getTotalLength()}`);
-// }
+	infocard.addEventListener("mouseover", () => {
+		infocard.classList.add("active");
+		infocardDivs.forEach((card) => {
+			card.classList.add("active");
+		});
+	});
+
+	infocard.addEventListener("mouseout", () => {
+		infocard.classList.remove("active");
+		infocardDivs.forEach((card) => {
+			card.classList.remove("active");
+		})
+	});
+
+};
+
+onHoverJames();
