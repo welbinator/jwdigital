@@ -37,8 +37,10 @@ label {
 	font-size: 14px;
 }
 textarea#message,
-input#from {
-	border-bottom: 1px solid white;
+input#from,
+input#name {
+	border: 1px solid #ffffff66;
+    border-radius: 5px;
 }
 .form-group {
 	margin-bottom: 1rem;

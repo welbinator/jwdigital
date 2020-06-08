@@ -35,7 +35,8 @@ export function ctaCheck(entries) {
 			const section1color = "#2364AA";
 			const section2color = "#3DA5D9";
 			const section3color = "#73BFB8";
-			const section4color = "#FEC601";
+			// const section4color = "#FEC601";
+			const section4color = "#ca9d00";
 			const section5color = "#EA7317";
 
 			const sections = document.querySelectorAll("section");

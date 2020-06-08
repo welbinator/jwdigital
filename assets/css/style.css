@@ -118,14 +118,14 @@ section:last-child {
 	margin: 1vh 0 2vh 0;
 }
 .cta {
-	padding: 10px 20px;
+	padding: 5px 20px;
 	margin-top: 3vh;
-	background: none;
-	border: 2px solid white;
+	background: var(--sectionColor);;
+	border-radius: 5px;
 	font-size: 24px;
 	font-weight: bold;
 	display: inline-block;
-	color: var(--sectionColor);
+	color: white;
 	transition: all 0.5s ease;
 }
 .cta-container {
