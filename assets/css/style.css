@@ -675,7 +675,7 @@ div#next-container {
 }
 @keyframes dark-fill {
 	to {
-		fill-opacity: 0.6;
+		fill-opacity: 1;
 	}
 }
 /****** SWIPER JS *******/
