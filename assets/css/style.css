@@ -52,6 +52,11 @@ a,
 #next-container,
 input[type="submit"] {
 	cursor: pointer !important;
+	
+}
+input[type="submit"] {
+	border: 0;
+	padding: 5px 20px;
 }
 .border {
 	border: 3vw solid var(--sectionColor);
@@ -142,7 +147,7 @@ section:last-child {
 	top: 3vw;
 	background-image: linear-gradient(black, black, transparent);
 	width: 90vw;
-	height: 17vh;
+	height: 20vh;
 	z-index: 1;
 	left: 50%;
 	transform: translateX(-50%);
@@ -499,37 +504,15 @@ div#next-container {
 
 /*  TEAM   */
 
-.infocardContainer * {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-weight: 300;
-  }
-
-  .textbois a {
-	  font-size: 1.5em;
-  }
-  .textbois h2 {
-    font-weight: 600;
-    font-style: italic;
-    font-family: "Fira Sans Condensed", sans-serif;
-  }
-  .textbois h4 {
-	  font-size: 1.6em;
-  }
-
-  .team-inner {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .team-member-wrapper {
-    min-width: 500px;
-  }
 
   .infocardContainer {
     display: flex;
-    height: 200px;
-    width: 200px;
+	height: 20vw;
+    width: 20vw;
+	max-height: 200px;
+	max-width: 200px;
+	min-height: 125px;
+	min-width: 125px;
     border-radius: 100px;
     /* background: rgb(0, 159, 255);
 	background: linear-gradient(121deg, rgba(255, 255, 255, 0) 13%, rgba(0, 159, 255, 1) 100%); */
@@ -546,11 +529,11 @@ div#next-container {
   .infocardContainer.active {
 	width: 500px;
 	max-width: 85vw;
+	min-width: 328px;
     border-radius: 100px 10px 100px 100px;
-	transition: all 1s ease-out;
+	transition: all .3s;
 	
   }
-
   .ifocardContainer div {
     color: white;
     flex-shrink: 1;
@@ -559,18 +542,19 @@ div#next-container {
   }
 
   .infocardContainer div * {
-    display: flex;
+    /* display: flex; */
 
     overflow: hidden;
-    text-overflow: hidden;
+    /* text-overflow: hidden; */
 
-    color: white;
+    /* color: white; */
     white-space: nowrap;
-    width: 0;
+    
     height: auto;
-    transition: all 450ms ease-in;
-    /* transition-delay: 1s; */
-  }
+	
+	/* width: 0;  */
+    
+  } 
 
 
   .infocardContainer div.active * {
@@ -579,31 +563,75 @@ div#next-container {
     transition: all 1s ease-out;
     /* transition-delay: 50ms; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
+  }
+  .team-member-inner {
+    display: flex;
+    flex-direction: column;
+	position: relative;
+	padding-top: 15px;
+}
+.textbois {
+	height: 50%!important;
+}
+  .textbois a {
+	  font-size: 1.5em;
+  }
+  .textbois h2 {
+    font-weight: 600;
+    
+	text-align: center;
+  }
+  .textbois.active h2 {
+	  text-align: center!important;
+  }
+  .textbois h4 {
+	  font-size: 1.6em;
   }
 
-  .infocardContainer .teamMain,
-  .infocardContainer .teamMain img {
-    --background-color: red;
-    height: 200px;
-    width: 200px;
-    padding-right: 10px;
-    border-radius: 100%;
-    flex-shrink: 0;
-    object-fit: cover;
+  .team-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
+  .team-member-wrapper {
+    min-width: 500px;
+  }
+
+
+
   .infocardContainer .teamMain img {
-    height: 200px;
-    width: 200px;
+    height: 20vw;
+    width: 20vw;
+	max-height: 200px;
+	max-width: 200px;
+	min-width: 125px;
+	min-height: 125px;
+	border-radius: 50%;
     transition: none;
     display: float;
     position: relative;
-    border: 10px solid white;
+    border: 10px solid #ffffff00;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
   }
 
+  .infocardContainer .teamMain:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    height: 20vw;
+    width: 20vw;
+    max-height: 200px;
+    max-width: 200px;
+    min-width: 125px;
+    min-height: 125px;
+	background: linear-gradient(to right, var(--sectionColor), black, black);
+	animation: rotate-border 20s linear forwards infinite;
+}
   .infocardContainer .textbois {
 	position: relative;
 	display: flex;
@@ -621,14 +649,12 @@ div#next-container {
     max-height: 30px;
     --background-color: white;
     position: absolute;
-    bottom: 5px;
-    left: 200px;
+    bottom: 15px;
+    /* left: 200px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-radius: 13px;
 }
-
-
 
   .hotlinks * {
     /* background-color: white; */
@@ -639,6 +665,16 @@ div#next-container {
   .hotlinks i {
 	  color: white;
   }
+
+
+
+  @keyframes rotate-border {
+	from { transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg)
+	}
+}
 /****** LOGO ANIMATION *****/
 #logo-anim path:nth-child(1) {
 	stroke-dasharray: 54.8;

@@ -87,47 +87,60 @@ icons.forEach((icon) => {
 
 // team section
 
-function onHoverDevin() {
-	const infocard = document.querySelector(".devin.infocardContainer");
-	const infocardDivs = document.querySelectorAll(".devin.infocardContainer div");
+// function onHoverDevin() {
+// 	const infocard = document.querySelector(".devin.infocardContainer");
+// 	const infocardDivs = document.querySelectorAll(".devin.infocardContainer div");
 
-	infocard.addEventListener("mouseover", () => {
-		infocard.classList.add("active");
-		infocardDivs.forEach((card) => {
-			card.classList.add("active");
-		});
-	});
+// 	infocard.addEventListener("mouseover", () => {
+// 		infocard.classList.add("active");
+// 		infocardDivs.forEach((card) => {
+// 			card.classList.add("active");
+// 		});
+// 	});
 
-	infocard.addEventListener("mouseout", () => {
-		infocard.classList.remove("active");
-		infocardDivs.forEach((card) => {
-			card.classList.remove("active");
-		})
-	});
+// 	infocard.addEventListener("mouseout", () => {
+// 		infocard.classList.remove("active");
+// 		infocardDivs.forEach((card) => {
+// 			card.classList.remove("active");
+// 		})
+// 	});
 
-};
+// 	infocard.addEventListener("touchstart", () => {
+// 		infocard.classList.toggle("active");
+// 		infocardDivs.forEach((card) => {
+// 			card.classList.toggle("active");
+// 		})
+// 	})
 
-onHoverDevin();
+// };
+
+// onHoverDevin();
 
 
-function onHoverJames() {
-	const infocard = document.querySelector(".james.infocardContainer");
-	const infocardDivs = document.querySelectorAll(".james.infocardContainer div");
+// function onHoverJames() {
+// 	const infocard = document.querySelector(".james.infocardContainer");
+// 	const infocardDivs = document.querySelectorAll(".james.infocardContainer div");
 
-	infocard.addEventListener("mouseover", () => {
-		infocard.classList.add("active");
-		infocardDivs.forEach((card) => {
-			card.classList.add("active");
-		});
-	});
+// 	infocard.addEventListener("mouseover", () => {
+// 		infocard.classList.add("active");
+// 		infocardDivs.forEach((card) => {
+// 			card.classList.add("active");
+// 		});
+// 	});
 
-	infocard.addEventListener("mouseout", () => {
-		infocard.classList.remove("active");
-		infocardDivs.forEach((card) => {
-			card.classList.remove("active");
-		})
-	});
+// 	infocard.addEventListener("mouseout", () => {
+// 		infocard.classList.remove("active");
+// 		infocardDivs.forEach((card) => {
+// 			card.classList.remove("active");
+// 		})
+// 	});
+// 	infocard.addEventListener("touchstart", () => {
+// 		infocard.classList.toggle("active");
+// 		infocardDivs.forEach((card) => {
+// 			card.classList.toggle("active");
+// 		})
+// 	})
 
-};
+// };
 
-onHoverJames();
+// onHoverJames();
