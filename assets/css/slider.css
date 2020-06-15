@@ -53,26 +53,55 @@ body {
 	text-decoration: none;
 }
 
-#home .my-slide.active .caption h3 {
+/* #home .my-slide.active .caption h3 {
 	opacity: 0;
-	animation: captionText 0.9s ease forwards;
+	animation: captionText 0.9s ease-in-out forwards;
 	animation-delay: 1.2s;
 }
 #home .my-slide.active .caption hr {
 	opacity: 0;
-	animation: captionText 0.9s ease forwards;
+	animation: captionText 0.9s ease-in-out forwards;
 	animation-delay: 1.2s;
 }
 
 #home .my-slide.active .caption p {
 	opacity: 0;
-	animation: captionText 0.9s ease forwards;
+	animation: captionText 0.9s ease-in-out forwards;
 	animation-delay: 1.2s;
+} */
+
+#home .my-slide .caption h3 {
+	opacity: 0;
+	transition: all .3s ease;
+	
+}
+#home .my-slide .caption hr {
+	opacity: 0;
+	transition: all .3s ease;
+}
+
+#home .my-slide .caption p {
+	opacity: 0;
+	transition: all .3s ease;
+}
+
+#home .my-slide.active .caption h3 {
+	opacity: 1;
+	
+}
+#home .my-slide.active .caption hr {
+	opacity: 1;
+	
+}
+
+#home .my-slide.active .caption p {
+	opacity: 1;
+	
 }
 
 #home .my-slide.active .caption a {
 	opacity: 0;
-	animation: captionCTA 0.9s ease forwards;
+	animation: captionCTA 0.9s ease-in-out forwards;
 	animation-delay: 1.7s;
 }
 

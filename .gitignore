@@ -2,3 +2,10 @@ node_modules
 .eslintrc.json
 package.json
 package-lock.json
+test.php
+test.htm
+team.htm
+slider.htm
+index-old.php
+index.htm
+
