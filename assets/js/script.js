@@ -51,6 +51,18 @@ nav.navLinks.forEach((link) => {
 	link.addEventListener("click", nav.showNav);
 });
 
+const menuItems = document.querySelectorAll(".nav__item");
+
+menuItems.forEach((item) => {
+	item.addEventListener("mouseover", () => {
+		item.classList.add("active")
+	});
+	item.addEventListener("mouseout", () => {
+		item.classList.remove("active")
+	});
+
+})
+
 /////////////////////////////////////////////////////////////////////
 // cards hover
 /////////////////////////////////////////////////////////////////////
