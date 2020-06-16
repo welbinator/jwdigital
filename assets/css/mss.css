@@ -4,6 +4,14 @@
     align-items: center;
     height: 500px;
 }
+.my-slider {
+    /* width: 73.6vw;
+    min-width: 425px; */
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 200px;
+    position: relative;
+}
 .pagination {
     display: flex;
     justify-content: space-around;
@@ -13,19 +21,23 @@
 
 .mss-slide {
     position: absolute;
-   left: 0;
-   top: 0;
+    left: 0;
+}
+.mss-slide, .mss-slide * {
+    /* position: absolute;
+   left: 0; */
+   /* top: 0; */
     /* margin: auto; */
     opacity: 0;
     transform: translateX(100px);
-    transition: all .5s ease;
+    transition: all 1.5s ease-out;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
 }
 
-.mss-slide.active {
+.mss-slide.active, .mss-slide.active *{
     opacity: 1;
     transform: translateX(0);
 }

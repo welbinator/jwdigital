@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="assets/css/form.css">
 	<link rel="stylesheet" href="assets/css/slider.css" />
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/mss.css">
 	<link rel="stylesheet" href="assets/css/style.css" />
 
 	<script src="https://kit.fontawesome.com/b6c33c7af2.js" crossorigin="anonymous"></script>
@@ -61,8 +62,8 @@
 		<section id="home" slide="1">
 			<div class="overlay"></div>
 			<div class="inner">
-				<div class="my-slider">
-					<div class="my-slide active">
+			<div class="my-slider">
+					<div class="mss-slide active">
 						<div class="container">
 							<div class="caption">
 								<p>It's business time</p cl>
@@ -74,7 +75,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="my-slide">
+					<div class="mss-slide">
 						<div class="container">
 							<div class="caption">
 								<p>Be unique</p>
@@ -86,7 +87,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="my-slide">
+					<div class="mss-slide">
 						<div class="container">
 							<div class="caption">
 								<p>Find your customers</p class="rellax" data-rellax-speed="-1">
@@ -249,6 +250,7 @@
 		<script type="text/javascript" src="assets/js/observer.js"></script> -->
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
 	<script type="module" src="assets/js/script.js"></script>
+	<script src="assets/js/mss.js"></script>
 
 	<script>
 		var swiper = new Swiper('.swiper-container', {

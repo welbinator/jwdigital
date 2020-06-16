@@ -1,4 +1,4 @@
-// import * as slider from "./slider.js";
+import * as slider from "./slider.js";
 import * as obs from "./observer.js";
 import * as nav from "./shownav.js";
 
@@ -96,4 +96,5 @@ icons.forEach((icon) => {
 		icon.classList.remove("spin");
 	});
 });
+
 
