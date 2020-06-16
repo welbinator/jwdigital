@@ -24,22 +24,17 @@
     left: 0;
 }
 .mss-slide, .mss-slide * {
-    /* position: absolute;
-   left: 0; */
-   /* top: 0; */
-    /* margin: auto; */
+   pointer-events: none;
     opacity: 0;
     transform: translateX(100px);
     transition: all 1.5s ease-out;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+   
 }
 
 .mss-slide.active, .mss-slide.active *{
     opacity: 1;
     transform: translateX(0);
+    pointer-events: auto;
 }
 
 .pagination .next, .pagination .prev {
