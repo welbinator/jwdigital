@@ -2,8 +2,8 @@
 
 // const colors = ["#2176FF", "#33A1FD", "#FDCA40", "#F79824", "#31393C"];
 const slides = document.querySelectorAll(".mss-slide");
-const nextButton = document.querySelector(".next");
-const prevButton = document.querySelector(".prev");
+// const nextButton = document.querySelector(".next");
+// const prevButton = document.querySelector(".prev");
 const mssInterval = 5500;
 let slideIndex = 1;
 
@@ -19,7 +19,7 @@ function slidesInit() {
 }
 slidesInit();
 
-const timerRef;
+let timerRef;
 
 
 var toNextSlide = function () {

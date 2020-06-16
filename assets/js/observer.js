@@ -1,12 +1,12 @@
-export const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
-export const options = {
+const options = {
 	threshold: 0.7,
 };
 
 window.addEventListener("resize", setThreshold);
 
-export function setThreshold() {
+function setThreshold() {
 	if (window.innerWidth > 768) {
 		options.threshold = 0.7;
 		console.log(options.threshold);
@@ -16,11 +16,11 @@ export function setThreshold() {
 	}
 }
 
-export let slide;
+let slide;
 
-export const observer = new IntersectionObserver(ctaCheck, options);
+const observer = new IntersectionObserver(ctaCheck, options);
 
-export function ctaCheck(entries) {
+function ctaCheck(entries) {
 	entries.forEach((entry) => {
 		const currentSlide = entry.target.getAttribute("id");
 
@@ -75,14 +75,14 @@ sections.forEach((section) => {
 // next section button
 /////////////////////////////
 
-export const home = document.querySelector("#home").getAttribute("id");
-export const nextButton = document.querySelector("#next-container");
+const home = document.querySelector("#home").getAttribute("id");
+const nextButton = document.querySelector("#next-container");
 
 let nextSection;
 let nextSectionId;
 
 nextButton.addEventListener("click", jump);
-export function jump(s) {
+function jump(s) {
 	slide = parseInt(slide, 10);
 	nextSection = slide + 1;
 	nextSection = document.querySelector(".section" + nextSection);
@@ -96,3 +96,22 @@ export function jump(s) {
 		window.scrollTo(0, nextSlide);
 	}
 }
+
+// window.addEventListener("resize", obs.setThreshold);
+
+// obs.sections.forEach((section) => {
+// 	obs.observer.observe(section);
+// });
+
+function addClassesToSections() {
+	// adds class section1, section2 etc to each section
+	const sectionsCount = document.querySelectorAll("section");
+	let sectionsIteration = 1;
+	sectionsCount.forEach((section) => {
+		if (sectionsIteration < sectionsCount.length + 1) {
+			section.classList.add("section" + sectionsIteration);
+			sectionsIteration++;
+		}
+	});
+}
+addClassesToSections();
