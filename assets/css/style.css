@@ -16,6 +16,7 @@ body {
 	font-weight: 600;
 	color: white;
 	background: black;
+	width: 0;
 }
 :root {
 	--sectionColor: #00abf3;
@@ -104,12 +105,12 @@ section.show .inner {
 section:last-child {
 	margin-bottom: 15vw !important;
 }
-#intro {
+/* #intro {
 	background: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */
 #portfolio {
 	padding: 0;
 }
@@ -617,9 +618,9 @@ div#next-container {
     flex-wrap: wrap;
   }
 
-  .team-member-wrapper {
+  /* .team-member-wrapper {
     min-width: 500px;
-  }
+  } */
 
 
 
